@@ -1357,6 +1357,26 @@ public class Lanes_Intersection_Bucharest {
         P_LaneIn_int1_V_S2.SetName("P_LaneIn_int1_V_S2");
         pn.PlaceList.add(P_LaneIn_int1_V_S2);
 
+        //----------------------------T0_V_S2------------------------------- //140
+        PetriTransition T0_In_V_S2 = new PetriTransition(pn);
+        T0_In_V_S1.TransitionName = "T0_Out_V_S1";
+        T0_In_V_S1.InputPlaceName.add("P_LaneIn_int1_V_S2");
+
+        // --------------guard 1-------------------------------------------------------OK
+        Condition T0_In_V_S2_Ct11 = new Condition(T0_In_V_S2, "P_LaneIn_int1_V_S2", TransitionCondition.HaveTramForMe);
+        Condition T0_In_V_S2_Ct12 = new Condition(T0_In_V_S2, "P_TramStationIn_CaleaFerentari_V_S2", TransitionCondition.CanAddCars);
+        T0_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T0_In_V_S2_Ct12);
+        GuardMapping grd1T0_In_V_S2 = new GuardMapping();
+        grd1T0_In_V_S2.condition = T17_Out_V_S1_Ct11;
+        grd1T0_In_V_S2.Activations.add(new Activation(T0_In_V_S2, "P_O_Lane_V_S1", TransitionOperation.PopElementWithTargetToQueue, "P_BusStation_Sebastian_V_S1"));
+        T0_In_V_S2.GuardMappingList.add(grd1T0_In_V_S2);
+
+        T17_Out_V_S1.Delay = 0;
+        pn.Transitions.add(T17_Out_V_S1);
+
+        //----------------------------END T17_V_S1----------------------------------------
+
+
         DataCarQueue P_LaneIn_int2_V_S2 = new DataCarQueue();
         P_LaneIn_int2_V_S2.Value.Size = 2;
         P_LaneIn_int2_V_S2.SetName("P_LaneIn_int2_V_S2");
@@ -1423,7 +1443,6 @@ public class Lanes_Intersection_Bucharest {
         P_LaneIn_int7_V_S2.SetName("P_LaneIn_int7_V_S2");
         pn.PlaceList.add(P_LaneIn_int7_V_S2);
 
-
         //-------------------OUT--------------------------
         DataCarQueue P_LaneOut_Int1_V_S2 = new DataCarQueue();
         P_LaneOut_Int1_V_S2.SetName("P_LaneOut_Int1_V_S2");
@@ -1447,6 +1466,8 @@ public class Lanes_Intersection_Bucharest {
         P_TramStationOut_CaleaFerentari_V_Out_S2.SetName("P_TramStationOut_CaleaFerentari_V_Out_S2");
         P_TramStationOut_CaleaFerentari_V_Out_S2.Value.Size = 1;
         pn.PlaceList.add(P_TramStationOut_CaleaFerentari_V_Out_S2);
+
+        //am ramas aici
 
         DataCarQueue P_TramStationOut_CaleaFerentari_V_S2 = new DataCarQueue();
         P_TramStationOut_CaleaFerentari_V_S2.SetName("P_TramStationOut_CaleaFerentari_V_S2");
