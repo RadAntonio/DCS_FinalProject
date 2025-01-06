@@ -216,6 +216,19 @@ public class Functions implements Serializable {
 		return false;
 	}
 
+	public boolean HavePriorityCarForMe(PetriTransition t, ArrayList<DataCar> list) {
+		if (list == null)
+			return false;
+		if (t == null)
+			return false;
+		for (int i = 0; i < list.size(); i++) {
+			if (list.get(i) != null && list.get(i).Value != null && list.get(i).Value.isPriority)
+				if (list.get(i).Value.Targets.contains(t.TransitionName))
+					return true;
+		}
+		return false;
+	}
+
 	public Integer CarIndexForMe(PetriTransition t, ArrayList<DataCar> list) {
 		if (list == null)
 			return -1;

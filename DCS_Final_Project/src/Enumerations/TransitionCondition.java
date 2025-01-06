@@ -17,6 +17,7 @@ public enum TransitionCondition implements Serializable{
 	HaveCarForMe,
 	HaveBusForMe,
 	HaveTramForMe,
+	HavePriorityCarForMe,
 	CanAddCars,
 	CanNotAddCars,
 	HaveCar,

@@ -236,6 +236,18 @@ public class Condition implements Serializable {
 				}
 				break;
 			}
+			case HavePriorityCarForMe: {
+				if (Value1 == null)
+					return false;
+				if (Value1.GetValue() == null)
+					return false;
+				if (Value1.GetType() == PetriObjectType.DataCarQueue) {
+					if (util.HavePriorityCarForMe(Parent, ((CarQueue) Value1.GetValue()).Cars)) {
+						return true;
+					}
+				}
+				break;
+			}
 			case CanAddCars: {
 				if (Value1 == null)
 					return false;
