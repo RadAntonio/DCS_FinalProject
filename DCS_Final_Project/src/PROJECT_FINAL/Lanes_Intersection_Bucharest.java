@@ -328,14 +328,14 @@ public class Lanes_Intersection_Bucharest {
 
         //-----------------------guard3---------------------------------------------------
 
-        Condition T18_In_S_S1_C31 = new Condition(T18_In_V_S1, "P_x_Lane_V_S1", TransitionCondition.HavePriorityCar);
-        GuardMapping grd3T18_In_S_S1 = new GuardMapping();
-        grd3T18_In_S_S1.condition= T18_In_S_S1_C31;
-        grd3T18_In_S_S1.Activations.add(new Activation(T18_In_V_S1, "P_x_Lane_V_S1", TransitionOperation.PopElementWithoutTarget, "P_b_Lane_V_S1"));
-        grd3T18_In_S_S1.Activations.add(new Activation(T18_In_V_S1, "P_TL_V_S1", TransitionOperation.Move, "P_TL_V_S1"));
-        grd3T18_In_S_S1.Activations.add(new Activation(T18_In_V_S1, "P_PTL_V_S1", TransitionOperation.Move, "P_PTL_V_S1"));
+        Condition T18_In_V_S1_C31 = new Condition(T18_In_V_S1, "P_x_Lane_V_S1", TransitionCondition.HavePriorityCar);
+        GuardMapping grd3T18_In_V_S1 = new GuardMapping();
+        grd3T18_In_V_S1.condition= T18_In_V_S1_C31;
+        grd3T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "P_x_Lane_V_S1", TransitionOperation.PopElementWithoutTarget, "P_b_Lane_V_S1"));
+        grd3T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "P_TL_V_S1", TransitionOperation.Move, "P_TL_V_S1"));
+        grd3T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "P_PTL_V_S1", TransitionOperation.Move, "P_PTL_V_S1"));
 
-        T18_In_V_S1.GuardMappingList.add(grd3T18_In_S_S1);
+        T18_In_V_S1.GuardMappingList.add(grd3T18_In_V_S1);
 
         //-----------------------guard1---------------------------------------------------
 
@@ -350,20 +350,20 @@ public class Lanes_Intersection_Bucharest {
         grd1T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "P_PTL_V_S1", TransitionOperation.Move, "P_PTL_V_S1"));
 
         T18_In_V_S1.GuardMappingList.add(grd1T18_In_V_S1);
-        //-----------------------guard2---------------------------------------------------
-        Condition T18_In_V_S1_Ct13 = new Condition(T18_In_V_S1, "UserReq_V_S1", TransitionCondition.NotNull);
-
-        GuardMapping grd2T18_In_V_S1 = new GuardMapping();
-        grd2T18_In_V_S1.condition = T18_In_V_S1_Ct13;
-
-        grd2T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "P_TL_V_S1", TransitionOperation.Move, "P_TL_V_S1"));
-        grd2T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "P_PTL_V_S1", TransitionOperation.Move, "P_PTL_V_S1"));
-        grd2T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "UserReq_V_S1", TransitionOperation.SendOverNetwork, "OP_Req_V_S1"));
-
-        T18_In_V_S1.GuardMappingList.add(grd2T18_In_V_S1);
-
-        T18_In_V_S1.Delay = 0;
-        pn.Transitions.add(T18_In_V_S1);
+//        //-----------------------guard2---------------------------------------------------
+//        Condition T18_In_V_S1_Ct13 = new Condition(T18_In_V_S1, "UserReq_V_S1", TransitionCondition.NotNull);
+//
+//        GuardMapping grd2T18_In_V_S1 = new GuardMapping();
+//        grd2T18_In_V_S1.condition = T18_In_V_S1_Ct13;
+//
+//        grd2T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "P_TL_V_S1", TransitionOperation.Move, "P_TL_V_S1"));
+//        grd2T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "P_PTL_V_S1", TransitionOperation.Move, "P_PTL_V_S1"));
+//        grd2T18_In_V_S1.Activations.add(new Activation(T18_In_V_S1, "UserReq_V_S1", TransitionOperation.SendOverNetwork, "OP_Req_V_S1"));
+//
+//        T18_In_V_S1.GuardMappingList.add(grd2T18_In_V_S1);
+//
+//        T18_In_V_S1.Delay = 0;
+//        pn.Transitions.add(T18_In_V_S1);
         //---------------------------- END T18_V_S1----------------------------------------
 
         DataCar P_b_Lane_V_S1 = new DataCar();
@@ -1357,7 +1357,7 @@ public class Lanes_Intersection_Bucharest {
         P_LaneIn_int1_V_S2.SetName("P_LaneIn_int1_V_S2");
         pn.PlaceList.add(P_LaneIn_int1_V_S2);
 
-        //----------------------------T0_V_S2------------------------------- //140
+        //----------------------------T0_V_S2------------------------------- //T140
         PetriTransition T0_In_V_S2 = new PetriTransition(pn);
         T0_In_V_S1.TransitionName = "T0_Out_V_S1";
         T0_In_V_S1.InputPlaceName.add("P_LaneIn_int1_V_S2");
@@ -1405,7 +1405,7 @@ public class Lanes_Intersection_Bucharest {
         P_Lane_LocusteanuOut_V_S2.SetName("P_Lane_LocusteanuOut_V_S2");
         pn.PlaceList.add(P_Lane_LocusteanuOut_V_S2);
 
-        //----------------------------T4_V_S2---------------------------------------- //T113
+        //----------------------------T4_V_S2---------------------------------------- //T141
         PetriTransition T4_In_V_S2 = new PetriTransition(pn);
         T4_In_V_S2.TransitionName = "T4_In_V_S2";
         T4_In_V_S2.InputPlaceName.add("P_LaneIn_int1_V_S2");
@@ -1575,8 +1575,6 @@ public class Lanes_Intersection_Bucharest {
         pn.Transitions.add(T8_In_V_S2);
         //----------------------END T8_V_S2-------------------------------------
 
-        //TODO AM RAMAS AICI T100 S2
-
         DataCar P_Lane_LocusteanuIn_V_S2 = new DataCar();
         P_Lane_LocusteanuIn_V_S2.SetName("P_Lane_LocusteanuIn_V_S2");
         pn.PlaceList.add(P_Lane_LocusteanuIn_V_S2);
@@ -1585,6 +1583,24 @@ public class Lanes_Intersection_Bucharest {
         P_LaneIn_int3_V_S2.Value.Size = 3;
         P_LaneIn_int3_V_S2.SetName("P_LaneIn_int3_V_S2");
         pn.PlaceList.add(P_LaneIn_int3_V_S2);
+
+        //----------------------------T10_V_S2---------------------------------------- //T101
+        PetriTransition T10_In_V_S2 = new PetriTransition(pn);
+        T10_In_V_S2.TransitionName = "T10_In_V_S2";
+        T10_In_V_S2.InputPlaceName.add("P_LaneIn_int3_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T10_In_V_S2_Ct11 = new Condition(T10_In_V_S2, "P_LaneIn_int3_V_S2", TransitionCondition.HaveCarForMe);
+        Condition T10_In_V_S2_Ct12 = new Condition(T10_In_V_S2, "P_LaneIn_int4_V_S2", TransitionCondition.CanAddCars);
+        T10_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T10_In_V_S2_Ct12);
+        GuardMapping grd1T10_In_V_S2 = new GuardMapping();
+        grd1T10_In_V_S2.condition = T10_In_V_S2_Ct11;
+        grd1T10_In_V_S2.Activations.add(new Activation(T10_In_V_S2, "P_LaneIn_int3_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int4_V_S2"));
+        T10_In_V_S2.GuardMappingList.add(grd1T10_In_V_S2);
+
+        T10_In_V_S2.Delay = 0;
+        pn.Transitions.add(T10_In_V_S2);
+        //---------------------------- END T10_V_S2----------------------------------------
 
         DataCarQueue P_TramStationIn_CaleaFerentari_V_S2 = new DataCarQueue();
         P_TramStationIn_CaleaFerentari_V_S2.Value.Size = 1;
@@ -1601,20 +1617,150 @@ public class Lanes_Intersection_Bucharest {
         P_LaneIn_int4_V_S2.SetName("P_LaneIn_int4_V_S2");
         pn.PlaceList.add(P_LaneIn_int4_V_S2);
 
+        //----------------------------T12_V_S2---------------------------------------- T142
+
+        PetriTransition T12_In_V_S2 = new PetriTransition(pn);
+        T12_In_V_S2.TransitionName = "T12_In_V_S2";
+        T12_In_V_S2.InputPlaceName.add("P_LaneIn_int3_V_S2");
+
+        // --------------guard 1-------------------------------------------------------OK
+        Condition T12_In_V_S2_Ct11 = new Condition(T12_In_V_S2, "P_LaneIn_int3_V_S2", TransitionCondition.HaveBusForMe);
+        Condition T12_In_V_S2_Ct12 = new Condition(T12_In_V_S2, "P_BusStation_CaleaRahovei_V_S2", TransitionCondition.CanAddCars);
+        T12_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T12_In_V_S2_Ct12);
+        GuardMapping grd1T12_In_V_S2 = new GuardMapping();
+        grd1T12_In_V_S2.condition = T12_In_V_S2_Ct11;
+        grd1T12_In_V_S2.Activations.add(new Activation(T12_In_V_S2, "P_LaneIn_int3_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_BusStation_CaleaRahovei_V_S2"));
+        T12_In_V_S2.GuardMappingList.add(grd1T12_In_V_S2);
+
+        T12_In_V_S2.Delay = 0;
+        pn.Transitions.add(T12_In_V_S2);
+
+        //----------------------------END T12_V_S2----------------------------------------
+
+
         DataCarQueue P_BusStation_CaleaRahovei_V_S2 = new DataCarQueue();
         P_BusStation_CaleaRahovei_V_S2.Value.Size = 2;
         P_BusStation_CaleaRahovei_V_S2.SetName("P_BusStation_CaleaRahovei_V_S2");
         pn.PlaceList.add(P_BusStation_CaleaRahovei_V_S2);
+
+        //----------------------------T14_V_S2---------------------------------------- T88
+        PetriTransition T14_In_V_S2 = new PetriTransition(pn);
+        T14_In_V_S2.TransitionName = "T14_In_V_S2";
+        T14_In_V_S2.InputPlaceName.add("P_BusStation_CaleaRahovei_V_S2");
+
+        // --------------guard 1-------------------------------------------------------OK
+        Condition T14_In_V_S2_Ct11 = new Condition(T14_In_V_S2, "P_BusStation_CaleaRahovei_V_S2", TransitionCondition.HaveBus);
+        Condition T14_In_V_S2_Ct12 = new Condition(T14_In_V_S2, "P_BusStation_CaleaRahoveiOut_V_S2", TransitionCondition.CanAddCars);
+        T14_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T14_In_V_S2_Ct12);
+        GuardMapping grd1T14_In_V_S2 = new GuardMapping();
+        grd1T14_In_V_S2.condition = T14_In_V_S2_Ct11;
+        grd1T14_In_V_S2.Activations.add(new Activation(T14_In_V_S2, "P_BusStation_CaleaRahovei_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_BusStation_CaleaRahoveiOut_V_S2"));
+        T14_In_V_S2.GuardMappingList.add(grd1T14_In_V_S2);
+
+        T14_In_V_S2.Delay = 10;
+        pn.Transitions.add(T14_In_V_S2);
+        //----------------------------END T14_V_S2----------------------------------------
 
         DataCarQueue P_BusStation_CaleaRahoveiOut_V_S2 = new DataCarQueue();
         P_BusStation_CaleaRahoveiOut_V_S2.Value.Size = 2;
         P_BusStation_CaleaRahoveiOut_V_S2.SetName("P_BusStation_CaleaRahoveiOut_V_S2");
         pn.PlaceList.add(P_BusStation_CaleaRahoveiOut_V_S2);
 
+        //----------------------------T16_V_S2---------------------------------------- T102
+        PetriTransition T16_In_V_S2 = new PetriTransition(pn);
+        T16_In_V_S2.TransitionName = "T14_In_V_S2";
+        T16_In_V_S2.InputPlaceName.add("P_LaneIn_int4_V_S2");
+        T16_In_V_S2.InputPlaceName.add("P_BusStation_CaleaRahoveiOut_V_S2");
+
+        // --------------guard 1-------------------------------------------------------OK
+        Condition T16_In_V_S2_Ct11 = new Condition(T13_Out_V_S1, "P_LaneIn_int4_V_S2", TransitionCondition.HaveCar);
+        Condition T16_In_V_S2_Ct12 = new Condition(T13_Out_V_S1, "P_BusStation_CaleaRahoveiOut_V_S2", TransitionCondition.DontHaveBus);
+        Condition T16_In_V_S2_Ct13 = new Condition(T13_Out_V_S1, "P_LaneIn_int5_V_S2", TransitionCondition.CanAddCars);
+        T16_In_V_S2_Ct12.SetNextCondition(LogicConnector.AND, T16_In_V_S2_Ct13);
+        T16_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T16_In_V_S2_Ct12);
+        GuardMapping grd1T16_In_V_S2 = new GuardMapping();
+        grd1T16_In_V_S2.condition = T16_In_V_S2_Ct11;
+        grd1T16_In_V_S2.Activations.add(new Activation(T16_In_V_S2, "P_LaneIn_int4_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int5_V_S2"));
+        T16_In_V_S2.GuardMappingList.add(grd1T16_In_V_S2);
+
+        // --------------guard 2-------------------------------------------------------OK with new condition DontHaveCar
+        Condition T16_In_V_S2_Ct21 = new Condition(T13_Out_V_S1, "P_LaneIn_int4_V_S2", TransitionCondition.DontHaveCar);
+        Condition T16_In_V_S2_Ct22 = new Condition(T13_Out_V_S1, "P_BusStation_CaleaRahoveiOut_V_S2", TransitionCondition.HaveBus);
+        Condition T16_In_V_S2_Ct23 = new Condition(T13_Out_V_S1, "P_LaneIn_int5_V_S2", TransitionCondition.CanAddCars);
+        T16_In_V_S2_Ct22.SetNextCondition(LogicConnector.AND, T16_In_V_S2_Ct23);
+        T16_In_V_S2_Ct21.SetNextCondition(LogicConnector.AND, T16_In_V_S2_Ct22);
+        GuardMapping grd2T16_In_V_S2 = new GuardMapping();
+        grd2T16_In_V_S2.condition = T16_In_V_S2_Ct21;
+        grd2T16_In_V_S2.Activations.add(new Activation(T16_In_V_S2, "P_BusStation_CaleaRahoveiOut_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int5_V_S2"));
+        T16_In_V_S2.GuardMappingList.add(grd2T16_In_V_S2);
+
+        // --------------guard 3-------------------------------------------------------
+        Condition T16_In_V_S2_Ct31 = new Condition(T16_In_V_S2, "P_LaneIn_int4_V_S2", TransitionCondition.HavePriorityCar);
+        Condition T16_In_V_S2_Ct32 = new Condition(T16_In_V_S2, "P_BusStation_CaleaRahoveiOut_V_S2", TransitionCondition.HaveBus);
+        Condition T16_In_V_S2_Ct33 = new Condition(T16_In_V_S2, "P_LaneIn_int5_V_S2", TransitionCondition.CanAddCars);
+        T16_In_V_S2_Ct32.SetNextCondition(LogicConnector.AND, T16_In_V_S2_Ct33);
+        T16_In_V_S2_Ct31.SetNextCondition(LogicConnector.AND, T16_In_V_S2_Ct32);
+        GuardMapping grd3T16_In_V_S2 = new GuardMapping();
+        grd3T16_In_V_S2.condition = T16_In_V_S2_Ct31;
+        grd3T16_In_V_S2.Activations.add(new Activation(T16_In_V_S2, "P_LaneIn_int4_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int5_V_S2"));
+        grd3T16_In_V_S2.Activations.add(new Activation(T16_In_V_S2, "P_BusStation_CaleaRahoveiOut_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int5_V_S2"));
+        T16_In_V_S2.GuardMappingList.add(grd3T16_In_V_S2);
+
+        // --------------guard 4-------------------------------------------------------
+        Condition T16_In_V_S2_Ct41 = new Condition(T16_In_V_S2, "P_LaneIn_int4_V_S2", TransitionCondition.HaveCar);
+        Condition T16_In_V_S2_Ct42 = new Condition(T16_In_V_S2, "P_BusStation_CaleaRahoveiOut_V_S2", TransitionCondition.HaveBus);
+        Condition T16_In_V_S2_Ct43 = new Condition(T16_In_V_S2, "P_LaneIn_int5_V_S2", TransitionCondition.CanAddCars);
+        T16_In_V_S2_Ct42.SetNextCondition(LogicConnector.AND, T16_In_V_S2_Ct43);
+        T16_In_V_S2_Ct41.SetNextCondition(LogicConnector.AND, T16_In_V_S2_Ct42);
+        GuardMapping grd4T16_In_V_S2 = new GuardMapping();
+        grd4T16_In_V_S2.condition = T16_In_V_S2_Ct41;
+        grd4T16_In_V_S2.Activations.add(new Activation(T16_In_V_S2, "P_BusStation_CaleaRahoveiOut_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int5_V_S2"));
+        grd4T16_In_V_S2.Activations.add(new Activation(T16_In_V_S2, "P_LaneIn_int4_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int5_V_S2"));
+        T16_In_V_S2.GuardMappingList.add(grd4T16_In_V_S2);
+
+        T16_In_V_S2.Delay = 0;
+        pn.Transitions.add(T16_In_V_S2);
+
+        //----------------------------END T16_V_S2----------------------------------------
+
         DataCarQueue P_LaneIn_int5_V_S2 = new DataCarQueue();
         P_LaneIn_int5_V_S2.Value.Size = 3;
         P_LaneIn_int5_V_S2.SetName("P_LaneIn_int5_V_S2");
         pn.PlaceList.add(P_LaneIn_int5_V_S2);
+
+        //----------------------------T18_V_S2---------------------------------------- //T104
+        PetriTransition T18_In_V_S2 = new PetriTransition(pn);
+        T18_In_V_S2.TransitionName = "T18_In_V_S2";
+        T18_In_V_S2.InputPlaceName.add("P_LaneIn_int5_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T18_In_V_S2_Ct11 = new Condition(T18_In_V_S2, "P_LaneIn_int5_V_S2", TransitionCondition.HaveCarForMe);
+        Condition T18_In_V_S2_Ct12 = new Condition(T18_In_V_S2, "P_LaneIn_int6_V_S2", TransitionCondition.CanAddCars);
+        T18_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T18_In_V_S2_Ct12);
+        GuardMapping grd1T18_In_V_S2 = new GuardMapping();
+        grd1T18_In_V_S2.condition = T18_In_V_S2_Ct11;
+        grd1T18_In_V_S2.Activations.add(new Activation(T18_In_V_S2, "P_LaneIn_int5_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int6_V_S2"));
+        T18_In_V_S2.GuardMappingList.add(grd1T18_In_V_S2);
+
+        T18_In_V_S2.Delay = 0;
+        pn.Transitions.add(T18_In_V_S2);
+        //---------------------------- END T18_V_S2----------------------------------------
+
+        //----------------------------T20_V_S2---------------------------------------- //T114
+        PetriTransition T20_In_V_S2 = new PetriTransition(pn);
+        T20_In_V_S2.TransitionName = "T20_In_V_S2";
+        T20_In_V_S2.InputPlaceName.add("P_LaneIn_int5_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T20_In_V_S2_Ct11 = new Condition(T20_In_V_S2, "P_LaneIn_int5_V_S2", TransitionCondition.HaveCarForMe);
+        GuardMapping grd1T20_In_V_S2 = new GuardMapping();
+        grd1T20_In_V_S2.condition = T20_In_V_S2_Ct11;
+        grd1T20_In_V_S2.Activations.add(new Activation(T20_In_V_S2, "P_LaneIn_int5_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_OlaruOut_V_S2"));
+        T20_In_V_S2.GuardMappingList.add(grd1T20_In_V_S2);
+
+        T20_In_V_S2.Delay = 0;
+        pn.Transitions.add(T20_In_V_S2);
+        //---------------------------- END T20_V_S2----------------------------------------
 
         DataCarQueue P_LaneIn_int6_V_S2 = new DataCarQueue();
         P_LaneIn_int6_V_S2.Value.Size = 3;
@@ -1628,6 +1774,63 @@ public class Lanes_Intersection_Bucharest {
         DataCar P_Lane_OlaruIn_V_S2 = new DataCar();
         P_Lane_OlaruIn_V_S2.SetName("P_Lane_OlaruIn_V_S2");
         pn.PlaceList.add(P_Lane_OlaruIn_V_S2);
+
+        //----------------------------T22_V_S2---------------------------------------- //T105
+        PetriTransition T22_In_V_S2 = new PetriTransition(pn);
+        T22_In_V_S2.TransitionName = "T22_In_V_S2";
+        T22_In_V_S2.InputPlaceName.add("P_LaneIn_int6_V_S2");
+        T22_In_V_S2.InputPlaceName.add("P_Lane_OlaruIn_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T22_In_V_S2_Ct11 = new Condition(T22_In_V_S2, "P_LaneIn_int6_V_S2", TransitionCondition.HaveCar);
+        Condition T22_In_V_S2_Ct12 = new Condition(T22_In_V_S2, "P_Lane_OlaruIn_V_S2", TransitionCondition.IsNull);
+        Condition T22_In_V_S2_Ct13 = new Condition(T22_In_V_S2, "P_LaneIn_int7_V_S2", TransitionCondition.CanAddCars);
+        T22_In_V_S2_Ct12.SetNextCondition(LogicConnector.AND, T22_In_V_S2_Ct13);
+        T22_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T22_In_V_S2_Ct12);
+        GuardMapping grd1T22_In_V_S2 = new GuardMapping();
+        grd1T22_In_V_S2.condition = T22_In_V_S2_Ct11;
+        grd1T22_In_V_S2.Activations.add(new Activation(T22_In_V_S2, "P_LaneIn_int6_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int7_V_S2"));
+        T22_In_V_S2.GuardMappingList.add(grd1T22_In_V_S2);
+
+        // --------------guard 2-------------------------------------------------------
+        Condition T22_In_V_S2_Ct21 = new Condition(T22_In_V_S2, "P_LaneIn_int6_V_S2", TransitionCondition.DontHaveCar);
+        Condition T22_In_V_S2_Ct22 = new Condition(T22_In_V_S2, "P_Lane_OlaruIn_V_S2", TransitionCondition.NotNull);
+        Condition T22_In_V_S2_Ct23 = new Condition(T22_In_V_S2, "P_LaneIn_int7_V_S2", TransitionCondition.CanAddCars);
+        T22_In_V_S2_Ct22.SetNextCondition(LogicConnector.AND, T22_In_V_S2_Ct23);
+        T22_In_V_S2_Ct21.SetNextCondition(LogicConnector.AND, T22_In_V_S2_Ct22);
+        GuardMapping grd2T22_In_V_S2 = new GuardMapping();
+        grd2T22_In_V_S2.condition = T22_In_V_S2_Ct21;
+        grd2T22_In_V_S2.Activations.add(new Activation(T22_In_V_S2, "P_Lane_OlaruIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int7_V_S2"));
+        T22_In_V_S2.GuardMappingList.add(grd2T22_In_V_S2);
+
+        // --------------guard 3-------------------------------------------------------
+        Condition T22_In_V_S2_Ct31 = new Condition(T22_In_V_S2, "P_LaneIn_int6_V_S2", TransitionCondition.HaveCar);
+        Condition T22_In_V_S2_Ct32 = new Condition(T22_In_V_S2, "P_Lane_OlaruIn_V_S2", TransitionCondition.IsPriorityCar);
+        Condition T22_In_V_S2_Ct33 = new Condition(T22_In_V_S2, "P_LaneIn_int7_V_S2", TransitionCondition.CanAddCars);
+        T22_In_V_S2_Ct32.SetNextCondition(LogicConnector.AND, T22_In_V_S2_Ct33);
+        T22_In_V_S2_Ct31.SetNextCondition(LogicConnector.AND, T22_In_V_S2_Ct32);
+        GuardMapping grd3T22_In_V_S2 = new GuardMapping();
+        grd3T22_In_V_S2.condition = T22_In_V_S2_Ct31;
+        grd3T22_In_V_S2.Activations.add(new Activation(T22_In_V_S2, "P_Lane_OlaruIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int7_V_S2"));
+        grd3T22_In_V_S2.Activations.add(new Activation(T22_In_V_S2, "P_LaneIn_int6_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int7_V_S2"));
+        T22_In_V_S2.GuardMappingList.add(grd3T22_In_V_S2);
+
+        // --------------guard 4-------------------------------------------------------
+        Condition T22_In_V_S2_Ct41 = new Condition(T22_In_V_S2, "P_LaneIn_int6_V_S2", TransitionCondition.HaveCar);
+        Condition T22_In_V_S2_Ct42 = new Condition(T22_In_V_S2, "P_Lane_OlaruIn_V_S2", TransitionCondition.NotNull);
+        Condition T22_In_V_S2_Ct43 = new Condition(T22_In_V_S2, "P_LaneIn_int7_V_S2", TransitionCondition.CanAddCars);
+        T22_In_V_S2_Ct42.SetNextCondition(LogicConnector.AND, T22_In_V_S2_Ct43);
+        T22_In_V_S2_Ct41.SetNextCondition(LogicConnector.AND, T22_In_V_S2_Ct42);
+        GuardMapping grd4T22_In_V_S2 = new GuardMapping();
+        grd4T22_In_V_S2.condition = T22_In_V_S2_Ct41;
+        grd4T22_In_V_S2.Activations.add(new Activation(T22_In_V_S2, "P_LaneIn_int6_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int7_V_S2"));
+        grd4T22_In_V_S2.Activations.add(new Activation(T22_In_V_S2, "P_Lane_OlaruIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int7_V_S2"));
+        T22_In_V_S2.GuardMappingList.add(grd4T22_In_V_S2);
+
+
+        T22_In_V_S2.Delay = 0;
+        pn.Transitions.add(T22_In_V_S2);
+        //----------------------------END T22_V_S2----------------------------------------
 
         DataCarQueue P_LaneIn_int7_V_S2 = new DataCarQueue();
         P_LaneIn_int7_V_S2.Value.Size = 3;
@@ -1731,6 +1934,73 @@ public class Lanes_Intersection_Bucharest {
         P_x_Cross_Lane_V_In_S2.SetName("P_x_Cross_Lane_V_In_S2");
         pn.PlaceList.add(P_x_Cross_Lane_V_In_S2);
 
+        //------------------------------T24_V_S2------------------------------------------ //T_u_car1_V_S2_Crossing
+        PetriTransition T24_In_V_S2 = new PetriTransition(pn);
+        T24_In_V_S2.TransitionName = "T24_In_V_S2";
+        T24_In_V_S2.InputPlaceName.add("P_LaneIn_int7_V_S2");
+        T24_In_V_S2.InputPlaceName.add("P_x_Cross_Lane_V_In_S2");
+
+        Condition T24_In_V_S2_Ct11 = new Condition(T24_In_V_S2, "P_LaneIn_int7_V_S2", TransitionCondition.HaveCar);
+        Condition T24_In_V_S2_Ct12 = new Condition(T24_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionCondition.CanAddCars);
+        T24_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T24_In_V_S2_Ct12);
+
+        GuardMapping grd1T24_In_V_S2 = new GuardMapping();
+        grd1T24_In_V_S2.condition = T16_In_V_S1_Ct11;
+        grd1T24_In_V_S2.Activations.add(new Activation(T24_In_V_S2, "P_LaneIn_int7_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_x_Cross_Lane_V_In_S2"));
+        T24_In_V_S2.GuardMappingList.add(grd1T24_In_V_S2);
+
+        T24_In_V_S2.Delay = 0;
+        pn.Transitions.add(T24_In_V_S2);
+        //---------------------------- END T16_V_S1----------------------------------------
+
+        //------------------------------T26_V_S1-------------------------------------------- //T_e_car1_V_S2_Crossing
+        PetriTransition T26_In_V_S2 = new PetriTransition(pn);
+        T26_In_V_S2.TransitionName = "T26_In_V_S2";
+        T26_In_V_S2.InputPlaceName.add("P_x_Cross_Lane_V_In_S2");
+        T26_In_V_S2.InputPlaceName.add("P_Cross_TL_V_S2");
+        T26_In_V_S2.InputPlaceName.add("UserReq_Cross_V_S2");
+        T26_In_V_S2.InputPlaceName.add("P_Cross_PTL_V_S2");
+
+        //-----------------------guard3---------------------------------------------------
+
+        Condition T26_In_V_S2_C31 = new Condition(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionCondition.HavePriorityCar);
+        GuardMapping grd3T26_In_V_S1 = new GuardMapping();
+        grd3T26_In_V_S1.condition= T26_In_V_S2_C31;
+        grd3T26_In_V_S1.Activations.add(new Activation(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionOperation.PopElementWithoutTarget, "P_LaneIn_int8_V_S2"));
+        grd3T26_In_V_S1.Activations.add(new Activation(T26_In_V_S2, "P_Cross_TL_V_S2", TransitionOperation.Move, "P_Cross_TL_V_S2"));
+        grd3T26_In_V_S1.Activations.add(new Activation(T26_In_V_S2, "P_Cross_PTL_V_S2", TransitionOperation.Move, "P_Cross_PTL_V_S2"));
+
+        T26_In_V_S2.GuardMappingList.add(grd3T26_In_V_S1);
+
+        //-----------------------guard1---------------------------------------------------
+
+        Condition T26_In_V_S2_Ct11 = new Condition(T26_In_V_S2, "P_Cross_TL_V_S2", TransitionCondition.Equal,"green");
+        Condition T26_In_V_S2_Ct12 = new Condition(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionCondition.HaveCar);
+        T26_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T26_In_V_S2_Ct12);
+
+        GuardMapping grd1T26_In_V_S2 = new GuardMapping();
+        grd1T26_In_V_S2.condition= T18_In_V_S1_Ct11;
+        grd1T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionOperation.PopElementWithoutTarget, "P_LaneIn_int8_V_S2"));
+        grd1T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_Cross_TL_V_S2", TransitionOperation.Move, "P_Cross_TL_V_S2"));
+        grd1T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_Cross_PTL_V_S2", TransitionOperation.Move, "P_Cross_PTL_V_S2"));
+
+        T26_In_V_S2.GuardMappingList.add(grd1T26_In_V_S2);
+        //-----------------------guard2---------------------------------------------------
+        Condition T26_In_V_S2_Ct13 = new Condition(T26_In_V_S2, "UserReq_Cross_V_S2", TransitionCondition.NotNull);
+
+        GuardMapping grd2T26_In_V_S2 = new GuardMapping();
+        grd2T26_In_V_S2.condition = T26_In_V_S2_Ct13;
+
+        grd2T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_Cross_TL_V_S2", TransitionOperation.Move, "P_Cross_TL_V_S2"));
+        grd2T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_Cross_PTL_V_S2", TransitionOperation.Move, "P_Cross_PTL_V_S2"));
+        grd2T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "UserReq_Cross_V_S2", TransitionOperation.SendOverNetwork, "OP_Req_Cross_N_S1"));
+
+        T26_In_V_S2.GuardMappingList.add(grd2T26_In_V_S2);
+
+        T26_In_V_S2.Delay = 0;
+        pn.Transitions.add(T26_In_V_S2);
+        //---------------------------- END T18_V_S1----------------------------------------
+
         DataString P_Cross_TL_V_S2 = new DataString();
         P_Cross_TL_V_S2.SetName("P_Cross_TL_V_S2");
         pn.PlaceList.add(P_Cross_TL_V_S2);
@@ -1754,6 +2024,40 @@ public class Lanes_Intersection_Bucharest {
         P_LaneIn_int8_V_S2.SetName("P_LaneIn_int8_V_S2");
         pn.PlaceList.add(P_LaneIn_int8_V_S2);
 
+        //----------------------------T28_V_S2---------------------------------------- //T118
+        PetriTransition T28_In_V_S2 = new PetriTransition(pn);
+        T28_In_V_S2.TransitionName = "T28_In_V_S2";
+        T28_In_V_S2.InputPlaceName.add("P_LaneIn_int8_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T28_In_V_S2_Ct11 = new Condition(T28_In_V_S2, "P_LaneIn_int8_V_S2", TransitionCondition.HaveCarForMe);
+        Condition T28_In_V_S2_Ct12 = new Condition(T28_In_V_S2, "P_LaneIn_int9_V_S2", TransitionCondition.CanAddCars);
+        T28_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T28_In_V_S2_Ct12);
+        GuardMapping grd1T28_In_V_S2 = new GuardMapping();
+        grd1T28_In_V_S2.condition = T28_In_V_S2_Ct11;
+        grd1T28_In_V_S2.Activations.add(new Activation(T28_In_V_S2, "P_LaneIn_int5_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int6_V_S2"));
+        T28_In_V_S2.GuardMappingList.add(grd1T28_In_V_S2);
+
+        T28_In_V_S2.Delay = 0;
+        pn.Transitions.add(T28_In_V_S2);
+        //---------------------------- END T28_V_S2----------------------------------------
+
+        //----------------------------T30_V_S2---------------------------------------- //T115
+        PetriTransition T30_In_V_S2 = new PetriTransition(pn);
+        T30_In_V_S2.TransitionName = "T30_In_V_S2";
+        T30_In_V_S2.InputPlaceName.add("P_LaneIn_int8_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T30_In_V_S2_Ct11 = new Condition(T30_In_V_S2, "P_LaneIn_int8_V_S2", TransitionCondition.HaveCarForMe);
+        GuardMapping grd1T30_In_V_S2 = new GuardMapping();
+        grd1T30_In_V_S2.condition = T30_In_V_S2_Ct11;
+        grd1T30_In_V_S2.Activations.add(new Activation(T30_In_V_S2, "P_LaneIn_int8_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_NiculaescuOut_V_S2"));
+        T30_In_V_S2.GuardMappingList.add(grd1T30_In_V_S2);
+
+        T30_In_V_S2.Delay = 0;
+        pn.Transitions.add(T30_In_V_S2);
+        //---------------------------- END T30_V_S2----------------------------------------
+
         DataCarQueue P_LaneIn_int9_V_S2 = new DataCarQueue();
         P_LaneIn_int9_V_S2.Value.Size = 3;
         P_LaneIn_int9_V_S2.SetName("P_LaneIn_int9_V_S2");
@@ -1767,15 +2071,163 @@ public class Lanes_Intersection_Bucharest {
         P_Lane_NiculaescuIn_V_S2.SetName("P_Lane_NiculaescuIn_V_S2");
         pn.PlaceList.add(P_Lane_NiculaescuIn_V_S2);
 
+        //----------------------------T32_V_S2---------------------------------------- //T119
+        PetriTransition T32_In_V_S2 = new PetriTransition(pn);
+        T32_In_V_S2.TransitionName = "T32_In_V_S2";
+        T32_In_V_S2.InputPlaceName.add("P_LaneIn_int9_V_S2");
+        T32_In_V_S2.InputPlaceName.add("P_Lane_NiculaescuIn_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T32_In_V_S2_Ct11 = new Condition(T32_In_V_S2, "P_LaneIn_int9_V_S2", TransitionCondition.HaveCar);
+        Condition T32_In_V_S2_Ct12 = new Condition(T32_In_V_S2, "P_Lane_NiculaescuIn_V_S2", TransitionCondition.IsNull);
+        Condition T32_In_V_S2_Ct13 = new Condition(T32_In_V_S2, "P_LaneIn_int10_V_S2", TransitionCondition.CanAddCars);
+        T32_In_V_S2_Ct12.SetNextCondition(LogicConnector.AND, T32_In_V_S2_Ct13);
+        T32_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T32_In_V_S2_Ct12);
+        GuardMapping grd1T32_In_V_S2 = new GuardMapping();
+        grd1T32_In_V_S2.condition = T32_In_V_S2_Ct11;
+        grd1T32_In_V_S2.Activations.add(new Activation(T32_In_V_S2, "P_LaneIn_int9_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int10_V_S2"));
+        T32_In_V_S2.GuardMappingList.add(grd1T32_In_V_S2);
+
+        // --------------guard 2-------------------------------------------------------
+        Condition T32_In_V_S2_Ct21 = new Condition(T32_In_V_S2, "P_LaneIn_int9_V_S2", TransitionCondition.DontHaveCar);
+        Condition T32_In_V_S2_Ct22 = new Condition(T32_In_V_S2, "P_Lane_NiculaescuIn_V_S2", TransitionCondition.NotNull);
+        Condition T32_In_V_S2_Ct23 = new Condition(T32_In_V_S2, "P_LaneIn_int10_V_S2", TransitionCondition.CanAddCars);
+        T32_In_V_S2_Ct22.SetNextCondition(LogicConnector.AND, T32_In_V_S2_Ct23);
+        T32_In_V_S2_Ct21.SetNextCondition(LogicConnector.AND, T32_In_V_S2_Ct22);
+        GuardMapping grd2T32_In_V_S2 = new GuardMapping();
+        grd2T32_In_V_S2.condition = T32_In_V_S2_Ct21;
+        grd2T32_In_V_S2.Activations.add(new Activation(T32_In_V_S2, "P_Lane_NiculaescuIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int10_V_S2"));
+        T32_In_V_S2.GuardMappingList.add(grd2T32_In_V_S2);
+
+        // --------------guard 3-------------------------------------------------------
+        Condition T32_In_V_S2_Ct31 = new Condition(T32_In_V_S2, "P_LaneIn_int9_V_S2", TransitionCondition.HaveCar);
+        Condition T32_In_V_S2_Ct32 = new Condition(T32_In_V_S2, "P_Lane_NiculaescuIn_V_S2", TransitionCondition.IsPriorityCar);
+        Condition T32_In_V_S2_Ct33 = new Condition(T32_In_V_S2, "P_LaneIn_int10_V_S2", TransitionCondition.CanAddCars);
+        T32_In_V_S2_Ct32.SetNextCondition(LogicConnector.AND, T32_In_V_S2_Ct33);
+        T32_In_V_S2_Ct31.SetNextCondition(LogicConnector.AND, T32_In_V_S2_Ct32);
+        GuardMapping grd3T32_In_V_S2 = new GuardMapping();
+        grd3T32_In_V_S2.condition = T32_In_V_S2_Ct31;
+        grd3T32_In_V_S2.Activations.add(new Activation(T32_In_V_S2, "P_Lane_NiculaescuIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int10_V_S2"));
+        grd3T32_In_V_S2.Activations.add(new Activation(T32_In_V_S2, "P_LaneIn_int9_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int10_V_S2"));
+        T32_In_V_S2.GuardMappingList.add(grd3T32_In_V_S2);
+
+        // --------------guard 4-------------------------------------------------------
+        Condition T32_In_V_S2_Ct41 = new Condition(T32_In_V_S2, "P_LaneIn_int9_V_S2", TransitionCondition.HaveCar);
+        Condition T32_In_V_S2_Ct42 = new Condition(T32_In_V_S2, "P_Lane_NiculaescuIn_V_S2", TransitionCondition.NotNull);
+        Condition T32_In_V_S2_Ct43 = new Condition(T32_In_V_S2, "P_LaneIn_int10_V_S2", TransitionCondition.CanAddCars);
+        T32_In_V_S2_Ct42.SetNextCondition(LogicConnector.AND, T32_In_V_S2_Ct43);
+        T32_In_V_S2_Ct41.SetNextCondition(LogicConnector.AND, T32_In_V_S2_Ct42);
+        GuardMapping grd4T32_In_V_S2 = new GuardMapping();
+        grd4T32_In_V_S2.condition = T32_In_V_S2_Ct41;
+        grd4T32_In_V_S2.Activations.add(new Activation(T32_In_V_S2, "P_LaneIn_int9_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int10_V_S2"));
+        grd4T32_In_V_S2.Activations.add(new Activation(T32_In_V_S2, "P_Lane_NiculaescuIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int10_V_S2"));
+        T32_In_V_S2.GuardMappingList.add(grd4T32_In_V_S2);
+
+
+        T32_In_V_S2.Delay = 0;
+        pn.Transitions.add(T32_In_V_S2);
+        //----------------------------END T32_V_S2----------------------------------------
+
         DataCarQueue P_LaneIn_int10_V_S2 = new DataCarQueue();
         P_LaneIn_int10_V_S2.Value.Size = 3;
         P_LaneIn_int10_V_S2.SetName("P_LaneIn_int10_V_S2");
         pn.PlaceList.add(P_LaneIn_int10_V_S2);
 
+        //----------------------------T34_V_S2---------------------------------------- //T120
+        PetriTransition T34_In_V_S2 = new PetriTransition(pn);
+        T34_In_V_S2.TransitionName = "T34_In_V_S2";
+        T34_In_V_S2.InputPlaceName.add("P_LaneIn_int10_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T34_In_V_S2_Ct11 = new Condition(T34_In_V_S2, "P_LaneIn_int10_V_S2", TransitionCondition.HaveCarForMe);
+        Condition T34_In_V_S2_Ct12 = new Condition(T34_In_V_S2, "P_LaneIn_int11_V_S2", TransitionCondition.CanAddCars);
+        T34_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T34_In_V_S2_Ct12);
+        GuardMapping grd1T34_In_V_S2 = new GuardMapping();
+        grd1T34_In_V_S2.condition = T28_In_V_S2_Ct11;
+        grd1T34_In_V_S2.Activations.add(new Activation(T34_In_V_S2, "P_LaneIn_int10_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int11_V_S2"));
+        T34_In_V_S2.GuardMappingList.add(grd1T34_In_V_S2);
+
+        T34_In_V_S2.Delay = 0;
+        pn.Transitions.add(T34_In_V_S2);
+        //---------------------------- END T34_V_S2----------------------------------------
+
+        //----------------------------T36_V_S2---------------------------------------- //T116
+        PetriTransition T36_In_V_S2 = new PetriTransition(pn);
+        T36_In_V_S2.TransitionName = "T36_In_V_S2";
+        T36_In_V_S2.InputPlaceName.add("P_LaneIn_int10_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T36_In_V_S2_Ct11 = new Condition(T36_In_V_S2, "P_LaneIn_int10_V_S2", TransitionCondition.HaveCarForMe);
+        GuardMapping grd1T36_In_V_S2 = new GuardMapping();
+        grd1T36_In_V_S2.condition = T36_In_V_S2_Ct11;
+        grd1T36_In_V_S2.Activations.add(new Activation(T36_In_V_S2, "P_LaneIn_int10_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_BarleaOut_V_S2"));
+        T36_In_V_S2.GuardMappingList.add(grd1T36_In_V_S2);
+
+        T36_In_V_S2.Delay = 0;
+        pn.Transitions.add(T36_In_V_S2);
+        //---------------------------- END T36_V_S2----------------------------------------
+
         DataCarQueue P_LaneIn_int11_V_S2 = new DataCarQueue();
         P_LaneIn_int11_V_S2.Value.Size = 3;
         P_LaneIn_int11_V_S2.SetName("P_LaneIn_int11_V_S2");
         pn.PlaceList.add(P_LaneIn_int11_V_S2);
+
+        //----------------------------T38_V_S2---------------------------------------- //T121
+        PetriTransition T38_In_V_S2 = new PetriTransition(pn);
+        T38_In_V_S2.TransitionName = "T38_In_V_S2";
+        T38_In_V_S2.InputPlaceName.add("P_LaneIn_int11_V_S2");
+        T38_In_V_S2.InputPlaceName.add("P_Lane_BarleaIn_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T38_In_V_S2_Ct11 = new Condition(T38_In_V_S2, "P_LaneIn_int11_V_S2", TransitionCondition.HaveCar);
+        Condition T38_In_V_S2_Ct12 = new Condition(T38_In_V_S2, "P_Lane_BarleaIn_V_S2", TransitionCondition.IsNull);
+        Condition T38_In_V_S2_Ct13 = new Condition(T38_In_V_S2, "P_LaneIn_int12_V_S2", TransitionCondition.CanAddCars);
+        T38_In_V_S2_Ct12.SetNextCondition(LogicConnector.AND, T38_In_V_S2_Ct13);
+        T38_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T38_In_V_S2_Ct12);
+        GuardMapping grd1T38_In_V_S2 = new GuardMapping();
+        grd1T38_In_V_S2.condition = T38_In_V_S2_Ct11;
+        grd1T38_In_V_S2.Activations.add(new Activation(T38_In_V_S2, "P_LaneIn_int11_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int12_V_S2"));
+        T38_In_V_S2.GuardMappingList.add(grd1T38_In_V_S2);
+
+        // --------------guard 2-------------------------------------------------------
+        Condition T38_In_V_S2_Ct21 = new Condition(T38_In_V_S2, "P_LaneIn_int11_V_S2", TransitionCondition.DontHaveCar);
+        Condition T38_In_V_S2_Ct22 = new Condition(T38_In_V_S2, "P_Lane_BarleaIn_V_S2", TransitionCondition.NotNull);
+        Condition T38_In_V_S2_Ct23 = new Condition(T38_In_V_S2, "P_LaneIn_int12_V_S2", TransitionCondition.CanAddCars);
+        T38_In_V_S2_Ct22.SetNextCondition(LogicConnector.AND, T38_In_V_S2_Ct23);
+        T38_In_V_S2_Ct21.SetNextCondition(LogicConnector.AND, T38_In_V_S2_Ct22);
+        GuardMapping grd2T38_In_V_S2 = new GuardMapping();
+        grd2T38_In_V_S2.condition = T38_In_V_S2_Ct21;
+        grd2T38_In_V_S2.Activations.add(new Activation(T38_In_V_S2, "P_Lane_BarleaIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int12_V_S2"));
+        T38_In_V_S2.GuardMappingList.add(grd2T38_In_V_S2);
+
+        // --------------guard 3-------------------------------------------------------
+        Condition T38_In_V_S2_Ct31 = new Condition(T38_In_V_S2, "P_LaneIn_int11_V_S2", TransitionCondition.HaveCar);
+        Condition T38_In_V_S2_Ct32 = new Condition(T38_In_V_S2, "P_Lane_BarleaIn_V_S2", TransitionCondition.IsPriorityCar);
+        Condition T38_In_V_S2_Ct33 = new Condition(T38_In_V_S2, "P_LaneIn_int12_V_S2", TransitionCondition.CanAddCars);
+        T38_In_V_S2_Ct32.SetNextCondition(LogicConnector.AND, T38_In_V_S2_Ct33);
+        T38_In_V_S2_Ct31.SetNextCondition(LogicConnector.AND, T38_In_V_S2_Ct32);
+        GuardMapping grd3T38_In_V_S2 = new GuardMapping();
+        grd3T38_In_V_S2.condition = T38_In_V_S2_Ct31;
+        grd3T38_In_V_S2.Activations.add(new Activation(T38_In_V_S2, "P_Lane_BarleaIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int12_V_S2"));
+        grd3T38_In_V_S2.Activations.add(new Activation(T38_In_V_S2, "P_LaneIn_int11_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int12_V_S2"));
+        T38_In_V_S2.GuardMappingList.add(grd3T38_In_V_S2);
+
+        // --------------guard 4-------------------------------------------------------
+        Condition T38_In_V_S2_Ct41 = new Condition(T38_In_V_S2, "P_LaneIn_int11_V_S2", TransitionCondition.HaveCar);
+        Condition T38_In_V_S2_Ct42 = new Condition(T38_In_V_S2, "P_Lane_BarleaIn_V_S2", TransitionCondition.NotNull);
+        Condition T38_In_V_S2_Ct43 = new Condition(T38_In_V_S2, "P_LaneIn_int12_V_S2", TransitionCondition.CanAddCars);
+        T38_In_V_S2_Ct42.SetNextCondition(LogicConnector.AND, T38_In_V_S2_Ct43);
+        T38_In_V_S2_Ct41.SetNextCondition(LogicConnector.AND, T38_In_V_S2_Ct42);
+        GuardMapping grd4T38_In_V_S2 = new GuardMapping();
+        grd4T38_In_V_S2.condition = T38_In_V_S2_Ct41;
+        grd4T38_In_V_S2.Activations.add(new Activation(T38_In_V_S2, "P_LaneIn_int11_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int12_V_S2"));
+        grd4T38_In_V_S2.Activations.add(new Activation(T38_In_V_S2, "P_Lane_BarleaIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int12_V_S2"));
+        T38_In_V_S2.GuardMappingList.add(grd4T38_In_V_S2);
+
+
+        T38_In_V_S2.Delay = 0;
+        pn.Transitions.add(T38_In_V_S2);
+        //----------------------------END T38_V_S2----------------------------------------
 
         DataCar P_Lane_BarleaOut_V_S2 = new DataCar();
         P_Lane_BarleaOut_V_S2.SetName("P_Lane_BarleaOut_V_S2");
@@ -1790,6 +2242,23 @@ public class Lanes_Intersection_Bucharest {
         P_LaneIn_int12_V_S2.SetName("P_LaneIn_int12_V_S2");
         pn.PlaceList.add(P_LaneIn_int12_V_S2);
 
+
+        //----------------------------T40_V_S2---------------------------------------- //T117
+        PetriTransition T40_In_V_S2 = new PetriTransition(pn);
+        T40_In_V_S2.TransitionName = "T40_In_V_S2";
+        T40_In_V_S2.InputPlaceName.add("P_LaneIn_int12_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T40_In_V_S2_Ct11 = new Condition(T40_In_V_S2, "P_LaneIn_int12_V_S2", TransitionCondition.HaveCarForMe);
+        GuardMapping grd1T40_In_V_S2 = new GuardMapping();
+        grd1T40_In_V_S2.condition = T40_In_V_S2_Ct11;
+        grd1T40_In_V_S2.Activations.add(new Activation(T40_In_V_S2, "P_LaneIn_int12_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_CarcalechiOut_V_S2"));
+        T40_In_V_S2.GuardMappingList.add(grd1T40_In_V_S2);
+
+        T40_In_V_S2.Delay = 0;
+        pn.Transitions.add(T40_In_V_S2);
+        //---------------------------- END T40_V_S2----------------------------------------
+
         DataCarQueue P_LaneIn_int13_V_S2 = new DataCarQueue();
         P_LaneIn_int13_V_S2.Value.Size = 3;
         P_LaneIn_int13_V_S2.SetName("P_LaneIn_int13_V_S2");
@@ -1799,14 +2268,123 @@ public class Lanes_Intersection_Bucharest {
         P_Lane_CarcalechiOut_V_S2.SetName("P_Lane_CarcalechiOut_V_S2");
         pn.PlaceList.add(P_Lane_CarcalechiOut_V_S2);
 
+        //----------------------------T42_V_S2---------------------------------------- //T122
+        PetriTransition T42_In_V_S2 = new PetriTransition(pn);
+        T42_In_V_S2.TransitionName = "T42_In_V_S2";
+        T42_In_V_S2.InputPlaceName.add("P_LaneIn_int12_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T42_In_V_S2_Ct11 = new Condition(T42_In_V_S2, "P_LaneIn_int12_V_S2", TransitionCondition.HaveCarForMe);
+        Condition T42_In_V_S2_Ct12 = new Condition(T42_In_V_S2, "P_LaneIn_int13_V_S2", TransitionCondition.CanAddCars);
+        T42_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T42_In_V_S2_Ct12);
+        GuardMapping grd1T42_In_V_S2 = new GuardMapping();
+        grd1T42_In_V_S2.condition = T42_In_V_S2_Ct11;
+        grd1T42_In_V_S2.Activations.add(new Activation(T42_In_V_S2, "P_LaneIn_int12_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int13_V_S2"));
+        T42_In_V_S2.GuardMappingList.add(grd1T42_In_V_S2);
+
+        T42_In_V_S2.Delay = 0;
+        pn.Transitions.add(T42_In_V_S2);
+        //---------------------------- END T42_V_S2----------------------------------------
+
         DataCar P_Lane_CarcalechiIn_V_S2 = new DataCar();
         P_Lane_CarcalechiIn_V_S2.SetName("P_Lane_CarcalechiIn_V_S2");
         pn.PlaceList.add(P_Lane_CarcalechiIn_V_S2);
+
+        //----------------------------T44_V_S2---------------------------------------- //T123
+        PetriTransition T44_In_V_S2 = new PetriTransition(pn);
+        T44_In_V_S2.TransitionName = "T44_In_V_S2";
+        T44_In_V_S2.InputPlaceName.add("P_LaneIn_int13_V_S2");
+        T44_In_V_S2.InputPlaceName.add("P_Lane_CarcalechiIn_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T44_In_V_S2_Ct11 = new Condition(T44_In_V_S2, "P_LaneIn_int13_V_S2", TransitionCondition.HaveCar);
+        Condition T44_In_V_S2_Ct12 = new Condition(T44_In_V_S2, "P_Lane_CarcalechiIn_V_S2", TransitionCondition.IsNull);
+        Condition T44_In_V_S2_Ct13 = new Condition(T44_In_V_S2, "P_LaneIn_int14_V_S2", TransitionCondition.CanAddCars);
+        T44_In_V_S2_Ct12.SetNextCondition(LogicConnector.AND, T44_In_V_S2_Ct13);
+        T44_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T44_In_V_S2_Ct12);
+        GuardMapping grd1T44_In_V_S2 = new GuardMapping();
+        grd1T44_In_V_S2.condition = T44_In_V_S2_Ct11;
+        grd1T44_In_V_S2.Activations.add(new Activation(T44_In_V_S2, "P_LaneIn_int13_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int14_V_S2"));
+        T44_In_V_S2.GuardMappingList.add(grd1T44_In_V_S2);
+
+        // --------------guard 2-------------------------------------------------------
+        Condition T44_In_V_S2_Ct21 = new Condition(T44_In_V_S2, "P_LaneIn_int13_V_S2", TransitionCondition.DontHaveCar);
+        Condition T44_In_V_S2_Ct22 = new Condition(T44_In_V_S2, "P_Lane_CarcalechiIn_V_S2", TransitionCondition.NotNull);
+        Condition T44_In_V_S2_Ct23 = new Condition(T44_In_V_S2, "P_LaneIn_int14_V_S2", TransitionCondition.CanAddCars);
+        T44_In_V_S2_Ct22.SetNextCondition(LogicConnector.AND, T44_In_V_S2_Ct23);
+        T44_In_V_S2_Ct21.SetNextCondition(LogicConnector.AND, T44_In_V_S2_Ct22);
+        GuardMapping grd2T44_In_V_S2 = new GuardMapping();
+        grd2T44_In_V_S2.condition = T44_In_V_S2_Ct21;
+        grd2T44_In_V_S2.Activations.add(new Activation(T44_In_V_S2, "P_Lane_CarcalechiIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int14_V_S2"));
+        T44_In_V_S2.GuardMappingList.add(grd2T44_In_V_S2);
+
+        // --------------guard 3-------------------------------------------------------
+        Condition T44_In_V_S2_Ct31 = new Condition(T44_In_V_S2, "P_LaneIn_int13_V_S2", TransitionCondition.HaveCar);
+        Condition T44_In_V_S2_Ct32 = new Condition(T44_In_V_S2, "P_Lane_CarcalechiIn_V_S2", TransitionCondition.IsPriorityCar);
+        Condition T44_In_V_S2_Ct33 = new Condition(T44_In_V_S2, "P_LaneIn_int14_V_S2", TransitionCondition.CanAddCars);
+        T44_In_V_S2_Ct32.SetNextCondition(LogicConnector.AND, T44_In_V_S2_Ct33);
+        T44_In_V_S2_Ct31.SetNextCondition(LogicConnector.AND, T44_In_V_S2_Ct32);
+        GuardMapping grd3T44_In_V_S2 = new GuardMapping();
+        grd3T44_In_V_S2.condition = T44_In_V_S2_Ct31;
+        grd3T44_In_V_S2.Activations.add(new Activation(T44_In_V_S2, "P_Lane_CarcalechiIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int14_V_S2"));
+        grd3T44_In_V_S2.Activations.add(new Activation(T44_In_V_S2, "P_LaneIn_int13_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int14_V_S2"));
+        T44_In_V_S2.GuardMappingList.add(grd3T44_In_V_S2);
+
+        // --------------guard 4-------------------------------------------------------
+        Condition T44_In_V_S2_Ct41 = new Condition(T44_In_V_S2, "P_LaneIn_int13_V_S2", TransitionCondition.HaveCar);
+        Condition T44_In_V_S2_Ct42 = new Condition(T44_In_V_S2, "P_Lane_CarcalechiIn_V_S2", TransitionCondition.NotNull);
+        Condition T44_In_V_S2_Ct43 = new Condition(T44_In_V_S2, "P_LaneIn_int14_V_S2", TransitionCondition.CanAddCars);
+        T44_In_V_S2_Ct42.SetNextCondition(LogicConnector.AND, T44_In_V_S2_Ct43);
+        T44_In_V_S2_Ct41.SetNextCondition(LogicConnector.AND, T44_In_V_S2_Ct42);
+        GuardMapping grd4T44_In_V_S2 = new GuardMapping();
+        grd4T44_In_V_S2.condition = T44_In_V_S2_Ct41;
+        grd4T44_In_V_S2.Activations.add(new Activation(T44_In_V_S2, "P_LaneIn_int13_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int14_V_S2"));
+        grd4T44_In_V_S2.Activations.add(new Activation(T44_In_V_S2, "P_Lane_CarcalechiIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int14_V_S2"));
+        T44_In_V_S2.GuardMappingList.add(grd4T44_In_V_S2);
+
+
+        T44_In_V_S2.Delay = 0;
+        pn.Transitions.add(T44_In_V_S2);
+        //----------------------------END T44_V_S2----------------------------------------
 
         DataCarQueue P_LaneIn_int14_V_S2 = new DataCarQueue();
         P_LaneIn_int14_V_S2.Value.Size = 3;
         P_LaneIn_int14_V_S2.SetName("P_LaneIn_int14_V_S2");
         pn.PlaceList.add(P_LaneIn_int14_V_S2);
+
+        //----------------------------T46_V_S2---------------------------------------- //T126
+        PetriTransition T46_In_V_S2 = new PetriTransition(pn);
+        T46_In_V_S2.TransitionName = "T46_In_V_S2";
+        T46_In_V_S2.InputPlaceName.add("P_LaneIn_int14_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T46_In_V_S2_Ct11 = new Condition(T46_In_V_S2, "P_LaneIn_int14_V_S2", TransitionCondition.HaveCarForMe);
+        GuardMapping grd1T46_In_V_S2 = new GuardMapping();
+        grd1T46_In_V_S2.condition = T46_In_V_S2_Ct11;
+        grd1T46_In_V_S2.Activations.add(new Activation(T46_In_V_S2, "P_LaneIn_int14_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_McDonaldsOut_V_S2"));
+        T46_In_V_S2.GuardMappingList.add(grd1T46_In_V_S2);
+
+        T46_In_V_S2.Delay = 0;
+        pn.Transitions.add(T46_In_V_S2);
+        //---------------------------- END T46_V_S2----------------------------------------
+
+        //----------------------------T48_V_S2---------------------------------------- //T124
+        PetriTransition T48_In_V_S2 = new PetriTransition(pn);
+        T48_In_V_S2.TransitionName = "T48_In_V_S2";
+        T48_In_V_S2.InputPlaceName.add("P_LaneIn_int14_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T48_In_V_S2_Ct11 = new Condition(T48_In_V_S2, "P_LaneIn_int14_V_S2", TransitionCondition.HaveCarForMe);
+        Condition T48_In_V_S2_Ct12 = new Condition(T48_In_V_S2, "P_LaneIn_int15_V_S2", TransitionCondition.CanAddCars);
+        T48_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T48_In_V_S2_Ct12);
+        GuardMapping grd1T48_In_V_S2 = new GuardMapping();
+        grd1T48_In_V_S2.condition = T48_In_V_S2_Ct11;
+        grd1T48_In_V_S2.Activations.add(new Activation(T48_In_V_S2, "P_LaneIn_int14_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int15_V_S2"));
+        T48_In_V_S2.GuardMappingList.add(grd1T48_In_V_S2);
+
+        T48_In_V_S2.Delay = 0;
+        pn.Transitions.add(T48_In_V_S2);
+        //---------------------------- END T48_V_S2----------------------------------------
 
         DataCarQueue P_LaneIn_int15_V_S2 = new DataCarQueue();
         P_LaneIn_int15_V_S2.Value.Size = 3;
@@ -1821,24 +2399,154 @@ public class Lanes_Intersection_Bucharest {
         P_Lane_McDonaldsIn_V_S2.SetName("P_Lane_McDonaldsIn_V_S2");
         pn.PlaceList.add(P_Lane_McDonaldsIn_V_S2);
 
+        //----------------------------T50_V_S2---------------------------------------- //T125
+        PetriTransition T50_In_V_S2 = new PetriTransition(pn);
+        T50_In_V_S2.TransitionName = "T50_In_V_S2";
+        T50_In_V_S2.InputPlaceName.add("P_LaneIn_int13_V_S2");
+        T50_In_V_S2.InputPlaceName.add("P_Lane_CarcalechiIn_V_S2");
+
+        // --------------guard 1-------------------------------------------------------
+        Condition T50_In_V_S2_Ct11 = new Condition(T50_In_V_S2, "P_LaneIn_int15_V_S2", TransitionCondition.HaveCar);
+        Condition T50_In_V_S2_Ct12 = new Condition(T50_In_V_S2, "P_Lane_McDonaldsIn_V_S2", TransitionCondition.IsNull);
+        Condition T50_In_V_S2_Ct13 = new Condition(T50_In_V_S2, "P_LaneIn_int16_V_S2", TransitionCondition.CanAddCars);
+        T50_In_V_S2_Ct12.SetNextCondition(LogicConnector.AND, T50_In_V_S2_Ct13);
+        T50_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T50_In_V_S2_Ct12);
+        GuardMapping grd1T50_In_V_S2 = new GuardMapping();
+        grd1T50_In_V_S2.condition = T50_In_V_S2_Ct11;
+        grd1T50_In_V_S2.Activations.add(new Activation(T50_In_V_S2, "P_LaneIn_int15_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int16_V_S2"));
+        T50_In_V_S2.GuardMappingList.add(grd1T50_In_V_S2);
+
+        // --------------guard 2-------------------------------------------------------
+        Condition T50_In_V_S2_Ct21 = new Condition(T50_In_V_S2, "P_LaneIn_int15_V_S2", TransitionCondition.DontHaveCar);
+        Condition T50_In_V_S2_Ct22 = new Condition(T50_In_V_S2, "P_Lane_McDonaldsIn_V_S2", TransitionCondition.NotNull);
+        Condition T50_In_V_S2_Ct23 = new Condition(T50_In_V_S2, "P_LaneIn_int16_V_S2", TransitionCondition.CanAddCars);
+        T50_In_V_S2_Ct22.SetNextCondition(LogicConnector.AND, T50_In_V_S2_Ct23);
+        T50_In_V_S2_Ct21.SetNextCondition(LogicConnector.AND, T50_In_V_S2_Ct22);
+        GuardMapping grd2T50_In_V_S2 = new GuardMapping();
+        grd2T50_In_V_S2.condition = T50_In_V_S2_Ct21;
+        grd2T50_In_V_S2.Activations.add(new Activation(T50_In_V_S2, "P_Lane_McDonaldsIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int16_V_S2"));
+        T50_In_V_S2.GuardMappingList.add(grd2T50_In_V_S2);
+
+        // --------------guard 3-------------------------------------------------------
+        Condition T50_In_V_S2_Ct31 = new Condition(T50_In_V_S2, "P_LaneIn_int15_V_S2", TransitionCondition.HaveCar);
+        Condition T50_In_V_S2_Ct32 = new Condition(T50_In_V_S2, "P_Lane_McDonaldsIn_V_S2", TransitionCondition.IsPriorityCar);
+        Condition T50_In_V_S2_Ct33 = new Condition(T50_In_V_S2, "P_LaneIn_int16_V_S2", TransitionCondition.CanAddCars);
+        T50_In_V_S2_Ct32.SetNextCondition(LogicConnector.AND, T50_In_V_S2_Ct33);
+        T50_In_V_S2_Ct31.SetNextCondition(LogicConnector.AND, T50_In_V_S2_Ct32);
+        GuardMapping grd3T50_In_V_S2 = new GuardMapping();
+        grd3T50_In_V_S2.condition = T50_In_V_S2_Ct31;
+        grd3T50_In_V_S2.Activations.add(new Activation(T50_In_V_S2, "P_Lane_McDonaldsIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int16_V_S2"));
+        grd3T50_In_V_S2.Activations.add(new Activation(T50_In_V_S2, "P_LaneIn_int15_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int16_V_S2"));
+        T50_In_V_S2.GuardMappingList.add(grd3T50_In_V_S2);
+
+        // --------------guard 4-------------------------------------------------------
+        Condition T50_In_V_S2_Ct41 = new Condition(T50_In_V_S2, "P_LaneIn_int15_V_S2", TransitionCondition.HaveCar);
+        Condition T50_In_V_S2_Ct42 = new Condition(T50_In_V_S2, "P_Lane_McDonaldsIn_V_S2", TransitionCondition.NotNull);
+        Condition T50_In_V_S2_Ct43 = new Condition(T50_In_V_S2, "P_LaneIn_int16_V_S2", TransitionCondition.CanAddCars);
+        T50_In_V_S2_Ct42.SetNextCondition(LogicConnector.AND, T50_In_V_S2_Ct43);
+        T50_In_V_S2_Ct41.SetNextCondition(LogicConnector.AND, T50_In_V_S2_Ct42);
+        GuardMapping grd4T50_In_V_S2 = new GuardMapping();
+        grd4T50_In_V_S2.condition = T50_In_V_S2_Ct41;
+        grd4T50_In_V_S2.Activations.add(new Activation(T50_In_V_S2, "P_LaneIn_int15_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int16_V_S2"));
+        grd4T50_In_V_S2.Activations.add(new Activation(T50_In_V_S2, "P_Lane_McDonaldsIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int16_V_S2"));
+        T50_In_V_S2.GuardMappingList.add(grd4T50_In_V_S2);
+
+
+        T50_In_V_S2.Delay = 0;
+        pn.Transitions.add(T50_In_V_S2);
+        //----------------------------END T50_V_S2----------------------------------------
+
+
         DataCarQueue P_LaneIn_int16_V_S2 = new DataCarQueue();
         P_LaneIn_int16_V_S2.Value.Size = 3;
         P_LaneIn_int16_V_S2.SetName("P_LaneIn_int16_V_S2");
         pn.PlaceList.add(P_LaneIn_int16_V_S2);
 
-        DataCarQueue P_LaneIn_int17_V_S2 = new DataCarQueue();
-        P_LaneIn_int17_V_S2.Value.Size = 3;
-        P_LaneIn_int17_V_S2.SetName("P_LaneIn_int17_V_S2");
-        pn.PlaceList.add(P_LaneIn_int17_V_S2);
+        //------------------------------T52_V_S2-------------------------------------------- //T_u_car1_V_S2
+        PetriTransition T52_In_V_S2 = new PetriTransition(pn);
+        T52_In_V_S2.TransitionName = "T52_In_V_S2";
+        T52_In_V_S2.InputPlaceName.add("P_LaneIn_int16_V_S2");
+        T52_In_V_S2.InputPlaceName.add("P_x_Lane_V_S2");
+
+        Condition T52_In_V_S2_Ct11 = new Condition(T52_In_V_S2, "P_LaneIn_int16_V_S2", TransitionCondition.HaveCar);
+        Condition T52_In_V_S2_Ct12 = new Condition(T52_In_V_S2, "P_x_Lane_V_S2", TransitionCondition.CanAddCars);
+        T52_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T52_In_V_S2_Ct12);
+
+        GuardMapping grd1T52_In_V_S2 = new GuardMapping();
+        grd1T52_In_V_S2.condition = T52_In_V_S2_Ct11;
+        grd1T52_In_V_S2.Activations.add(new Activation(T52_In_V_S2, "P_LaneIn_int16_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_x_Lane_V_S2"));
+        T52_In_V_S2.GuardMappingList.add(grd1T52_In_V_S2);
+
+        T52_In_V_S2.Delay = 0;
+        pn.Transitions.add(T52_In_V_S2);
+        //---------------------------- END T52_V_S2----------------------------------------
+
+
+
+//        DataCarQueue P_LaneIn_int17_V_S2 = new DataCarQueue(); asta na re sens aici
+//        P_LaneIn_int17_V_S2.Value.Size = 3;
+//        P_LaneIn_int17_V_S2.SetName("P_LaneIn_int17_V_S2");
+//        pn.PlaceList.add(P_LaneIn_int17_V_S2);
 
         DataCarQueue P_x_Lane_V_S2 = new DataCarQueue();
         P_x_Lane_V_S2.Value.Size = 4;
         P_x_Lane_V_S2.SetName("P_x_Lane_V_S2");
         pn.PlaceList.add(P_x_Lane_V_S2);
 
+        //------------------------------T54_V_S1-------------------------------------------- //T_e_car1_V_S2
+        PetriTransition T54_In_V_S2 = new PetriTransition(pn);
+        T54_In_V_S2.TransitionName = "T18_V_S1";
+        T54_In_V_S2.InputPlaceName.add("P_x_Lane_V_S2");
+        T54_In_V_S2.InputPlaceName.add("P_TL_V_S2");
+
+        //-----------------------guard3---------------------------------------------------
+
+        Condition T54_In_V_S2_C31 = new Condition(T54_In_V_S2, "P_x_Lane_V_S2", TransitionCondition.HavePriorityCar);
+        GuardMapping grd3T54_In_V_S2 = new GuardMapping();
+        grd3T54_In_V_S2.condition= T54_In_V_S2_C31;
+        grd3T54_In_V_S2.Activations.add(new Activation(T54_In_V_S2, "P_x_Lane_V_S2", TransitionOperation.PopElementWithoutTarget, "P_b_Lane_V_S2"));
+        grd3T54_In_V_S2.Activations.add(new Activation(T54_In_V_S2, "P_TL_V_S2", TransitionOperation.Move, "P_TL_V_S2"));
+
+        T54_In_V_S2.GuardMappingList.add(grd3T54_In_V_S2);
+
+        //-----------------------guard1---------------------------------------------------
+
+        Condition T54_In_V_S2_Ct11 = new Condition(T54_In_V_S2, "P_TL_V_S2", TransitionCondition.Equal,"green");
+        Condition T54_In_V_S2_Ct12 = new Condition(T54_In_V_S2, "P_x_Lane_V_S2", TransitionCondition.HaveCar);
+        T54_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T54_In_V_S2_Ct12);
+
+        GuardMapping grd1T54_In_V_S2 = new GuardMapping();
+        grd1T54_In_V_S2.condition= T54_In_V_S2_Ct11;
+        grd1T54_In_V_S2.Activations.add(new Activation(T54_In_V_S2, "P_x_Lane_V_S2", TransitionOperation.PopElementWithoutTarget, "P_b_Lane_V_S2"));
+        grd1T54_In_V_S2.Activations.add(new Activation(T54_In_V_S2, "P_TL_V_S2", TransitionOperation.Move, "P_TL_V_S2"));
+        T54_In_V_S2.GuardMappingList.add(grd1T54_In_V_S2);
+
+        T54_In_V_S2.Delay = 0;
+        pn.Transitions.add(T54_In_V_S2);
+        //---------------------------- END T54_V_S1----------------------------------------
+
         DataCar P_b_Lane_V_S2 = new DataCar();
         P_b_Lane_V_S2.SetName("P_b_Lane_V_S2");
         pn.PlaceList.add(P_b_Lane_V_S2);
+
+        //-----------------------------T20_V_S1-------------------------------------------//T_I_Car1_V
+        PetriTransition T55_In_V_S2 = new PetriTransition(pn);
+        T55_In_V_S2.TransitionName = "T55_In_V_S2";
+        T55_In_V_S2.InputPlaceName.add("P_b_Lane_V_S2");
+        T55_In_V_S2.InputPlaceName.add("P_I_S2");
+
+        Condition T55_In_V_S2_Ct11 = new Condition(T55_In_V_S2, "P_b_Lane_V_S2", TransitionCondition.NotNull);
+        Condition T55_In_V_S2_Ct12 = new Condition(T55_In_V_S2, "P_I_S2", TransitionCondition.CanAddCars);
+        T55_In_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T55_In_V_S2_Ct12);
+
+        GuardMapping grd1T55_In_V_S2 = new GuardMapping();
+        grd1T55_In_V_S2.condition = T55_In_V_S2_Ct11;
+        grd1T55_In_V_S2.Activations.add(new Activation(T55_In_V_S2, "P_b_Lane_V_S2", TransitionOperation.AddElement, "P_I_S2"));
+        T55_In_V_S2.GuardMappingList.add(grd1T55_In_V_S2);
+
+        T55_In_V_S2.Delay = 0;
+        pn.Transitions.add(T55_In_V_S2);
+        //---------------------------- END T20_V_S1----------------------------------------
 
         //-------------------OUT--------------------------
         DataCarQueue P_LaneOut_Int9_V_S2 = new DataCarQueue();
