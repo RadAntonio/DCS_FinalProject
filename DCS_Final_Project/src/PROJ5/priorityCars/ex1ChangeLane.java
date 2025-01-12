@@ -56,8 +56,6 @@ public class ex1ChangeLane {
 
         Condition Tu1Ct11 = new Condition(t_u1, "P_a1", TransitionCondition.NotNull);
         Condition Tu1Ct12 = new Condition(t_u1, "P_x1", TransitionCondition.CanAddCars);
-        Condition Tu1Ct13 = new Condition(t_u1, "P_a1", TransitionCondition.IsBus);
-        Tu1Ct12.SetNextCondition(LogicConnector.AND, Tu1Ct13);
         Tu1Ct11.SetNextCondition(LogicConnector.AND, Tu1Ct12);
 
         GuardMapping grdTu11 = new GuardMapping();

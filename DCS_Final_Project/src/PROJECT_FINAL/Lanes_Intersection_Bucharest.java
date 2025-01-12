@@ -116,7 +116,7 @@ public class Lanes_Intersection_Bucharest {
         T0_In_V_S1.GuardMappingList.add(grd4T0_In_V_S1);
 
 
-        T0_In_V_S1.Delay = 0;
+        T0_In_V_S1.Delay = 1;
         pn.Transitions.add(T0_In_V_S1);
         //---------------------------- END T0_In_V_S1---------------------------------------- //T0
 
@@ -140,7 +140,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T2_In_V_S1.Activations.add(new Activation(T2_In_V_S1, "P_LaneIn_int1_V_S1", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int2_V_S1"));
         T2_In_V_S1.GuardMappingList.add(grd1T2_In_V_S1);
 
-        T2_In_V_S1.Delay = 0;
+        T2_In_V_S1.Delay = 1;
         pn.Transitions.add(T2_In_V_S1);
         //---------------------------- END T2_In_V_S1---------------------------------------- //T4
 
@@ -163,7 +163,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T6_In_V_S1.condition= T6_In_V_S1_Ct11;
         grd1T6_In_V_S1.Activations.add(new Activation(T6_In_V_S1, "P_LaneIn_int1_V_S1", TransitionOperation.PopElementWithTarget, "P_Lane_TelitaOut_V_S1"));
         T6_In_V_S1.GuardMappingList.add(grd1T6_In_V_S1);
-        T6_In_V_S1.Delay = 0;
+        T6_In_V_S1.Delay = 1;
         pn.Transitions.add(T6_In_V_S1);
 
         //----------------------------END T6_In_V_S1----------------------------------------
@@ -225,7 +225,7 @@ public class Lanes_Intersection_Bucharest {
         T8_In_V_S1.GuardMappingList.add(grd4T8_In_V_S1);
 
 
-        T8_In_V_S1.Delay = 0;
+        T8_In_V_S1.Delay = 1;
         pn.Transitions.add(T8_In_V_S1);
         //----------------------------END T8_In_V_S1----------------------------------------
 
@@ -248,7 +248,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T10_In_V_S1.Activations.add(new Activation(T10_In_V_S1, "P_LaneIn_int3_V_S1", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int4_V_S1"));
         T10_In_V_S1.GuardMappingList.add(grd1T10_In_V_S1);
 
-        T10_In_V_S1.Delay = 0;
+        T10_In_V_S1.Delay = 1;
         pn.Transitions.add(T10_In_V_S1);
         //---------------------------- END T10_In_V_S1----------------------------------------
 
@@ -275,7 +275,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T12_In_V_S1.Activations.add(new Activation(T12_In_V_S1, "P_LaneIn_int4_V_S1", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int5_V_S1"));
         T12_In_V_S1.GuardMappingList.add(grd1T12_In_V_S1);
 
-        T12_In_V_S1.Delay = 0;
+        T12_In_V_S1.Delay = 1;
         pn.Transitions.add(T12_In_V_S1);
         //---------------------------- END T12_In_V_S1----------------------------------------
 
@@ -291,7 +291,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T14_In_V_S1.Activations.add(new Activation(T14_In_V_S1, "P_LaneIn_int4_V_S1", TransitionOperation.PopElementWithTarget, "P_LaneInOut_V_S1"));
         T14_In_V_S1.GuardMappingList.add(grd1T14_In_V_S1);
 
-        T14_In_V_S1.Delay = 0;
+        T14_In_V_S1.Delay = 1;
         pn.Transitions.add(T14_In_V_S1);
         //---------------------------- END T14_In_V_S1----------------------------------------
 
@@ -315,7 +315,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T16_In_V_S1.Activations.add(new Activation(T16_In_V_S1, "P_LaneIn_int5_V_S1", TransitionOperation.PopElementWithoutTargetToQueue, "P_x_Lane_V_S1"));
         T16_In_V_S1.GuardMappingList.add(grd1T16_In_V_S1);
 
-        T16_In_V_S1.Delay = 0;
+        T16_In_V_S1.Delay = 1;
         pn.Transitions.add(T16_In_V_S1);
         //---------------------------- END T16_In_V_S1----------------------------------------
 
@@ -345,7 +345,7 @@ public class Lanes_Intersection_Bucharest {
         grdT22_In_V_S1.Activations.add(new Activation(T22_In_V_S1, "full", TransitionOperation.SendOverNetwork, "OP_V_S1"));
         T22_In_V_S1.GuardMappingList.add(grdT22_In_V_S1);
 
-        T22_In_V_S1.Delay = 0;
+        T22_In_V_S1.Delay = 1;
         pn.Transitions.add(T22_In_V_S1);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -375,7 +375,7 @@ public class Lanes_Intersection_Bucharest {
 
 
         T18_In_V_S1.GuardMappingList.add(grd1T18_In_V_S1);
-        T18_In_V_S1.Delay = 0;
+        T18_In_V_S1.Delay = 1;
         pn.Transitions.add(T18_In_V_S1);
         //---------------------------- END T18_In_V_S1----------------------------------------
 
@@ -398,7 +398,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T20_In_V_S1.Activations.add(new Activation(T20_In_V_S1, "P_b_Lane_V_S1", TransitionOperation.AddElement, "P_I_S1"));
         T20_In_V_S1.GuardMappingList.add(grd1T20_In_V_S1);
 
-        T20_In_V_S1.Delay = 0;
+        T20_In_V_S1.Delay = 1;
         pn.Transitions.add(T20_In_V_S1);
         //---------------------------- END T20_In_V_S1----------------------------------------
 
@@ -463,7 +463,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T1_Out_V_S1.Activations.add(new Activation(T1_Out_V_S1, "P_LaneDonici_V_In_S1", TransitionOperation.Move, "P_LaneOut_V_S1"));
         T1_Out_V_S1.GuardMappingList.add(grd4T1_Out_V_S1);
 
-        T1_Out_V_S1.Delay = 0;
+        T1_Out_V_S1.Delay = 1;
         pn.Transitions.add(T1_Out_V_S1);
 
         //----------------------------END T1_Out_V_S1----------------------------------------
@@ -491,7 +491,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T3_Out_V_S1.condition= T3_Out_V_S1_Ct11;
         grd1T3_Out_V_S1.Activations.add(new Activation(T3_Out_V_S1, "P_LaneOut_Int2_V_S1", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int1_V_S1"));
         T3_Out_V_S1.GuardMappingList.add(grd1T3_Out_V_S1);
-        T3_Out_V_S1.Delay = 0;
+        T3_Out_V_S1.Delay = 1;
         pn.Transitions.add(T3_Out_V_S1);
 
         //----------------------------END T3_Out_V_S1----------------------------------------
@@ -508,7 +508,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T5_Out_V_S1.condition= T5_Out_V_S1_Ct11;
         grd1T5_Out_V_S1.Activations.add(new Activation(T5_Out_V_S1, "P_LaneOut_Int2_V_S1", TransitionOperation.PopElementWithTarget, "P_LaneDonici_V_Out_S1"));
         T5_Out_V_S1.GuardMappingList.add(grd1T5_Out_V_S1);
-        T5_Out_V_S1.Delay = 0;
+        T5_Out_V_S1.Delay = 1;
         pn.Transitions.add(T5_Out_V_S1);
 
         //----------------------------END T5_Out_V_S1----------------------------------------
@@ -576,7 +576,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T7_Out_V_S1.Activations.add(new Activation(T7_Out_V_S1, "P_LaneGhDonici_V_In_S1", TransitionOperation.AddElement, "P_LaneOut_Int2_V_S1"));
         T7_Out_V_S1.GuardMappingList.add(grd4T7_Out_V_S1);
 
-        T7_Out_V_S1.Delay = 0;
+        T7_Out_V_S1.Delay = 1;
         pn.Transitions.add(T7_Out_V_S1);
 
         //----------------------------END T7_Out_V_S1----------------------------------------
@@ -604,7 +604,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T9_Out_V_S1.condition= T9_Out_V_S1_Ct11;
         grd1T9_Out_V_S1.Activations.add(new Activation(T9_Out_V_S1, "P_LaneOut_Int4_V_S1", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int3_V_S1"));
         T9_Out_V_S1.GuardMappingList.add(grd1T9_Out_V_S1);
-        T9_Out_V_S1.Delay = 0;
+        T9_Out_V_S1.Delay = 1;
         pn.Transitions.add(T9_Out_V_S1);
 
         //----------------------------END T9_Out_V_S1----------------------------------------
@@ -621,7 +621,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T11_Out_V_S1.condition= T11_Out_V_S1_Ct11;
         grd1T11_Out_V_S1.Activations.add(new Activation(T11_Out_V_S1, "P_LaneOut_Int4_V_S1", TransitionOperation.PopElementWithTarget, "P_LaneGhDonici_V_Out_S1"));
         T11_Out_V_S1.GuardMappingList.add(grd1T11_Out_V_S1);
-        T11_Out_V_S1.Delay = 0;
+        T11_Out_V_S1.Delay = 1;
         pn.Transitions.add(T11_Out_V_S1);
 
         //----------------------------END T11_Out_V_S1----------------------------------------
@@ -690,7 +690,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T13_Out_V_S1.Activations.add(new Activation(T13_Out_V_S1, "P_LaneOut_Int5_V_S1", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int4_V_S1"));
         T13_Out_V_S1.GuardMappingList.add(grd4T13_Out_V_S1);
 
-        T13_Out_V_S1.Delay = 0;
+        T13_Out_V_S1.Delay = 1;
         pn.Transitions.add(T13_Out_V_S1);
 
         //----------------------------END T13_Out_V_S1----------------------------------------
@@ -740,7 +740,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T17_Out_V_S1.Activations.add(new Activation(T17_Out_V_S1, "P_O_Lane_V_S1", TransitionOperation.PopElementWithTargetToQueue, "P_BusStation_Sebastian_V_S1"));
         T17_Out_V_S1.GuardMappingList.add(grd1T17_Out_V_S1);
 
-        T17_Out_V_S1.Delay = 0;
+        T17_Out_V_S1.Delay = 1;
         pn.Transitions.add(T17_Out_V_S1);
 
         //----------------------------END T17_Out_V_S1----------------------------------------
@@ -760,7 +760,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T19_Out_V_S1.Activations.add(new Activation(T19_Out_V_S1, "P_O_Lane_V_S1", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int5_V_S1"));
         T19_Out_V_S1.GuardMappingList.add(grd1T19_Out_V_S1);
 
-        T19_Out_V_S1.Delay = 0;
+        T19_Out_V_S1.Delay = 1;
         pn.Transitions.add(T19_Out_V_S1);
 
         //----------------------------END T19_Out_V_S1----------------------------------------
@@ -781,7 +781,7 @@ public class Lanes_Intersection_Bucharest {
         grd2T21_Out_V_S1.Activations.add(new Activation(T21_Out_V_S1, "P_I_S1", TransitionOperation.PopElementWithTargetToQueue, "P_O_Lane_V_S1"));
         T21_Out_V_S1.GuardMappingList.add(grd2T21_Out_V_S1);
 
-        T21_Out_V_S1.Delay = 0;
+        T21_Out_V_S1.Delay = 1;
         pn.Transitions.add(T21_Out_V_S1);
 
         //----------------------------END T21_Out_V_S1----------------------------------------
@@ -818,7 +818,7 @@ public class Lanes_Intersection_Bucharest {
         grdT6_In_N_S1.Activations.add(new Activation(T6_In_N_S1, "full", TransitionOperation.SendOverNetwork, "OP_N_S1"));
         T6_In_N_S1.GuardMappingList.add(grdT6_In_N_S1);
 
-        T6_In_N_S1.Delay = 0;
+        T6_In_N_S1.Delay = 1;
         pn.Transitions.add(T6_In_N_S1);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -837,7 +837,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T0_In_N_S1.Activations.add(new Activation(T0_In_N_S1, "P_LaneIn_N_S1", TransitionOperation.AddElement, "P_x_Lane_N_S1"));
         T0_In_N_S1.GuardMappingList.add(grd1T0_In_N_S1);
 
-        T0_In_N_S1.Delay = 0;
+        T0_In_N_S1.Delay = 1;
         pn.Transitions.add(T0_In_N_S1);
         //---------------------------- END T0_In_N_S1----------------------------------------
 
@@ -869,7 +869,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T2_In_N_S1.Activations.add(new Activation(T2_In_N_S1, "P_TL_N_S1", TransitionOperation.Move, "P_TL_N_S1"));
         T2_In_N_S1.GuardMappingList.add(grd1T2_In_N_S1);
 
-        T2_In_N_S1.Delay = 0;
+        T2_In_N_S1.Delay = 1;
         pn.Transitions.add(T2_In_N_S1);
         //---------------------------- END T2_InN_S1----------------------------------------
 
@@ -888,7 +888,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T4_In_N_S1.Activations.add(new Activation(T4_In_N_S1, "P_b_Lane_N_S1", TransitionOperation.AddElement, "P_I_S1"));
         T4_In_N_S1.GuardMappingList.add(grd1T4_In_N_S1);
 
-        T4_In_N_S1.Delay = 0;
+        T4_In_N_S1.Delay = 1;
         pn.Transitions.add(T4_In_N_S1);
         //---------------------------- END T4_In_N_S1----------------------------------------
 
@@ -915,7 +915,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T1_Out_N_S1.Activations.add(new Activation(T1_Out_N_S1, "P_O_Lane_N_S1", TransitionOperation.PopElementWithoutTarget, "P_Oe_Lane_N_S1"));
         T1_Out_N_S1.GuardMappingList.add(grd1T1_Out_N_S1);
 
-        T1_Out_N_S1.Delay = 0;
+        T1_Out_N_S1.Delay = 1;
         pn.Transitions.add(T1_Out_N_S1);
 
         //----------------------------END T1_Out_N_S1----------------------------------------
@@ -937,7 +937,7 @@ public class Lanes_Intersection_Bucharest {
         grd2T3_Out_N_S1.Activations.add(new Activation(T3_Out_N_S1, "P_I_S1", TransitionOperation.PopElementWithTargetToQueue, "P_O_Lane_N_S1"));
         T3_Out_N_S1.GuardMappingList.add(grd2T3_Out_N_S1);
 
-        T3_Out_N_S1.Delay = 0;
+        T3_Out_N_S1.Delay = 1;
         pn.Transitions.add(T3_Out_N_S1);
 
         //----------------------------END T3_Out_N_S1----------------------------------------
@@ -974,7 +974,7 @@ public class Lanes_Intersection_Bucharest {
         grdT6_In_S_S1.Activations.add(new Activation(T6_In_S_S1, "full", TransitionOperation.SendOverNetwork, "OP_S_S1"));
         T6_In_S_S1.GuardMappingList.add(grdT6_In_S_S1);
 
-        T6_In_S_S1.Delay = 0;
+        T6_In_S_S1.Delay = 1;
         pn.Transitions.add(T6_In_S_S1);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -993,7 +993,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T0_In_S_S1.Activations.add(new Activation(T0_In_S_S1, "P_LaneIn_int1_S_S1", TransitionOperation.AddElement, "P_x_Lane_S_S1"));
         T0_In_S_S1.GuardMappingList.add(grd1T0_In_S_S1);
 
-        T0_In_S_S1.Delay = 0;
+        T0_In_S_S1.Delay = 1;
         pn.Transitions.add(T0_In_S_S1);
         //---------------------------- END T0_In_S_S1----------------------------------------
 
@@ -1025,7 +1025,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T2_In_S_S1.Activations.add(new Activation(T2_In_S_S1, "P_TL_S_S1", TransitionOperation.Move, "P_TL_S_S1"));
         T2_In_S_S1.GuardMappingList.add(grd1T2_In_S_S1);
 
-        T2_In_S_S1.Delay = 0;
+        T2_In_S_S1.Delay = 1;
         pn.Transitions.add(T2_In_S_S1);
         //---------------------------- END T2_S_S1----------------------------------------
 
@@ -1048,7 +1048,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T4_In_S_S1.Activations.add(new Activation(T4_In_S_S1, "P_b_Lane_S_S1", TransitionOperation.AddElement, "P_I_S1"));
         T4_In_S_S1.GuardMappingList.add(grd1T4_In_S_S1);
 
-        T4_In_S_S1.Delay = 0;
+        T4_In_S_S1.Delay = 1;
         pn.Transitions.add(T4_In_S_S1);
         //---------------------------- END T4_In_S_S1----------------------------------------
 
@@ -1075,7 +1075,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T1_Out_S_S1.Activations.add(new Activation(T1_Out_S_S1, "P_O_Lane_S_S1", TransitionOperation.PopElementWithoutTarget, "P_Oe_Lane_S_S1"));
         T1_Out_S_S1.GuardMappingList.add(grd1T1_Out_S_S1);
 
-        T1_Out_S_S1.Delay = 0;
+        T1_Out_S_S1.Delay = 1;
         pn.Transitions.add(T1_Out_S_S1);
 
         //----------------------------END T1_Out_S_S1----------------------------------------
@@ -1097,7 +1097,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T3_Out_S_S1.Activations.add(new Activation(T3_Out_S_S1, "P_I_S1", TransitionOperation.PopElementWithTargetToQueue, "P_O_Lane_S_S1"));
         T3_Out_S_S1.GuardMappingList.add(grd1T3_Out_S_S1);
 
-        T3_Out_S_S1.Delay = 0;
+        T3_Out_S_S1.Delay = 1;
         pn.Transitions.add(T3_Out_S_S1);
 
         //----------------------------END T3_Out_S_S1----------------------------------------
@@ -1130,7 +1130,7 @@ public class Lanes_Intersection_Bucharest {
         grdT6_In_E_S1.Activations.add(new Activation(T6_In_E_S1, "full", TransitionOperation.SendOverNetwork, "OP_E_S1"));
         T6_In_E_S1.GuardMappingList.add(grdT6_In_E_S1);
 
-        T6_In_E_S1.Delay = 0;
+        T6_In_E_S1.Delay = 1;
         pn.Transitions.add(T6_In_E_S1);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1149,7 +1149,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T0_In_E_S1.Activations.add(new Activation(T0_In_E_S1, "P_LaneOut_Int1_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_x_Lane_E_S1"));
         T0_In_E_S1.GuardMappingList.add(grd1T0_In_E_S1);
 
-        T0_In_E_S1.Delay = 0;
+        T0_In_E_S1.Delay = 1;
         pn.Transitions.add(T0_In_E_S1);
         //---------------------------- END T0_In_E_S1----------------------------------------
 
@@ -1184,7 +1184,7 @@ public class Lanes_Intersection_Bucharest {
 
         T2_In_E_S1.GuardMappingList.add(grd1T2_In_E_S1);
 
-        T2_In_E_S1.Delay = 0;
+        T2_In_E_S1.Delay = 1;
         pn.Transitions.add(T2_In_E_S1);
         //---------------------------- END T2_In_E_S1----------------------------------------
 
@@ -1203,7 +1203,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T4_In_E_S1.Activations.add(new Activation(T4_In_E_S1, "P_b_Lane_E_S1", TransitionOperation.AddElement, "P_I_S1"));
         T4_In_E_S1.GuardMappingList.add(grd1T4_In_E_S1);
 
-        T4_In_E_S1.Delay = 0;
+        T4_In_E_S1.Delay = 1;
         pn.Transitions.add(T4_In_E_S1);
         //---------------------------- END T4_In_N_S1----------------------------------------
 
@@ -1231,7 +1231,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T3_Out_E_S1.Activations.add(new Activation(T3_Out_E_S1, "P_I_S1", TransitionOperation.PopElementWithTargetToQueue, "P_O_Lane_E_S1"));
         T3_Out_E_S1.GuardMappingList.add(grd1T3_Out_E_S1);
 
-        T3_Out_E_S1.Delay = 0;
+        T3_Out_E_S1.Delay = 1;
         pn.Transitions.add(T3_Out_E_S1);
 
         //----------------------------END T3_Out_E_S1----------------------------------------
@@ -1248,10 +1248,10 @@ public class Lanes_Intersection_Bucharest {
         T1_Out_E_S1_Ct11.SetNextCondition(LogicConnector.AND, T1_Out_E_S1_Ct12);
         GuardMapping grd1T1_Out_E_S1 = new GuardMapping();
         grd1T1_Out_E_S1.condition = T1_Out_E_S1_Ct11;
-        grd1T1_Out_E_S1.Activations.add(new Activation(T1_Out_E_S1, "P_O_Lane_E_S1", TransitionOperation.PopElementWithoutTarget, "P_LaneIn_int1_V_S2"));
+        grd1T1_Out_E_S1.Activations.add(new Activation(T1_Out_E_S1, "P_O_Lane_E_S1", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int1_V_S2"));
         T1_Out_E_S1.GuardMappingList.add(grd1T1_Out_E_S1);
 
-        T1_Out_E_S1.Delay = 0;
+        T1_Out_E_S1.Delay = 1;
         pn.Transitions.add(T1_Out_E_S1);
 
         //----------------------------END T1_E_S1----------------------------------------
@@ -1308,7 +1308,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T0_In_V_S2.Activations.add(new Activation(T0_In_V_S2, "P_LaneIn_int1_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_TramStationIn_CaleaFerentari_V_S2"));
         T0_In_V_S2.GuardMappingList.add(grd1T0_In_V_S2);
 
-        T0_In_V_S2.Delay = 0;
+        T0_In_V_S2.Delay = 1;
         pn.Transitions.add(T0_In_V_S2);
 
         //----------------------------END T0_In_V_S2----------------------------------------
@@ -1354,7 +1354,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T4_In_V_S2.Activations.add(new Activation(T4_In_V_S2, "P_LaneIn_int1_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_LocusteanuOut_V_S2"));
         T4_In_V_S2.GuardMappingList.add(grd1T4_In_V_S2);
 
-        T4_In_V_S2.Delay = 0;
+        T4_In_V_S2.Delay = 1;
         pn.Transitions.add(T4_In_V_S2);
         //---------------------------- END T4_In_V_S2----------------------------------------
 
@@ -1372,7 +1372,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T6_In_V_S2.Activations.add(new Activation(T6_In_V_S2, "P_LaneIn_int1_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int2_V_S2"));
         T6_In_V_S2.GuardMappingList.add(grd1T6_In_V_S2);
 
-        T6_In_V_S2.Delay = 0;
+        T6_In_V_S2.Delay = 1;
         pn.Transitions.add(T6_In_V_S2);
         //---------------------------- END T6_In_V_S1----------------------------------------
 
@@ -1522,7 +1522,7 @@ public class Lanes_Intersection_Bucharest {
         grd9T8_In_V_S2.Activations.add(new Activation(T8_In_V_S2, "P_TramStationIn_CaleaFerentariOut_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int3_V_S2"));
         T8_In_V_S2.GuardMappingList.add(grd9T8_In_V_S2);
 
-        T8_In_V_S2.Delay = 0;
+        T8_In_V_S2.Delay = 1;
         pn.Transitions.add(T8_In_V_S2);
         //----------------------END T8_In_V_S2-------------------------------------
 
@@ -1545,7 +1545,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T10_In_V_S2.Activations.add(new Activation(T10_In_V_S2, "P_LaneIn_int3_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int4_V_S2"));
         T10_In_V_S2.GuardMappingList.add(grd1T10_In_V_S2);
 
-        T10_In_V_S2.Delay = 0;
+        T10_In_V_S2.Delay = 1;
         pn.Transitions.add(T10_In_V_S2);
         //---------------------------- END T10_In_V_S2----------------------------------------
 
@@ -1569,7 +1569,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T12_In_V_S2.Activations.add(new Activation(T12_In_V_S2, "P_LaneIn_int3_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_BusStation_CaleaRahovei_V_S2"));
         T12_In_V_S2.GuardMappingList.add(grd1T12_In_V_S2);
 
-        T12_In_V_S2.Delay = 0;
+        T12_In_V_S2.Delay = 1;
         pn.Transitions.add(T12_In_V_S2);
 
         //----------------------------END T12_In_V_S2----------------------------------------
@@ -1655,7 +1655,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T16_In_V_S2.Activations.add(new Activation(T16_In_V_S2, "P_LaneIn_int4_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int5_V_S2"));
         T16_In_V_S2.GuardMappingList.add(grd4T16_In_V_S2);
 
-        T16_In_V_S2.Delay = 0;
+        T16_In_V_S2.Delay = 1;
         pn.Transitions.add(T16_In_V_S2);
 
         //----------------------------END T16_In_V_S2----------------------------------------
@@ -1679,7 +1679,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T18_In_V_S2.Activations.add(new Activation(T18_In_V_S2, "P_LaneIn_int5_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int6_V_S2"));
         T18_In_V_S2.GuardMappingList.add(grd1T18_In_V_S2);
 
-        T18_In_V_S2.Delay = 0;
+        T18_In_V_S2.Delay = 1;
         pn.Transitions.add(T18_In_V_S2);
         //---------------------------- END T18_In_V_S2----------------------------------------
 
@@ -1703,7 +1703,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T20_In_V_S2.Activations.add(new Activation(T20_In_V_S2, "P_LaneIn_int5_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_OlaruOut_V_S2"));
         T20_In_V_S2.GuardMappingList.add(grd1T20_In_V_S2);
 
-        T20_In_V_S2.Delay = 0;
+        T20_In_V_S2.Delay = 1;
         pn.Transitions.add(T20_In_V_S2);
         //---------------------------- END T20_In_V_S2----------------------------------------
 
@@ -1764,7 +1764,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T22_In_V_S2.Activations.add(new Activation(T22_In_V_S2, "P_Lane_OlaruIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int7_V_S2"));
         T22_In_V_S2.GuardMappingList.add(grd4T22_In_V_S2);
 
-        T22_In_V_S2.Delay = 0;
+        T22_In_V_S2.Delay = 1;
         pn.Transitions.add(T22_In_V_S2);
         //----------------------------END T22_V_S2----------------------------------------
 
@@ -1925,7 +1925,7 @@ public class Lanes_Intersection_Bucharest {
         grd9T1_Out_V_S2.Activations.add(new Activation(T1_Out_V_S2, "P_TramStationOut_CaleaFerentari_V_Out_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int1_V_S2"));
         T1_Out_V_S2.GuardMappingList.add(grd9T1_Out_V_S2);
 
-        T1_Out_V_S2.Delay = 0;
+        T1_Out_V_S2.Delay = 1;
         pn.Transitions.add(T1_Out_V_S2);
         //----------------------END T1_Out_V_S2-------------------------------------
 
@@ -1955,7 +1955,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T3_Out_V_S2.condition= T3_Out_V_S2_Ct11;
         grd1T3_Out_V_S2.Activations.add(new Activation(T3_Out_V_S2, "P_LaneOut_Int3_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_TocilescuOut_V_S2"));
         T3_Out_V_S2.GuardMappingList.add(grd1T3_Out_V_S2);
-        T3_Out_V_S2.Delay = 0;
+        T3_Out_V_S2.Delay = 1;
         pn.Transitions.add(T3_Out_V_S2);
 
         //----------------------------END T3_Out_V_S2----------------------------------------
@@ -1974,7 +1974,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T5_Out_V_S2.condition= T5_Out_V_S2_Ct11;
         grd1T5_Out_V_S2.Activations.add(new Activation(T5_Out_V_S2, "P_LaneOut_Int3_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int2_V_S2"));
         T5_Out_V_S2.GuardMappingList.add(grd1T5_Out_V_S2);
-        T5_Out_V_S2.Delay = 0;
+        T5_Out_V_S2.Delay = 1;
         pn.Transitions.add(T5_Out_V_S2);
 
         //----------------------------END T5_Out_V_S2----------------------------------------
@@ -1993,7 +1993,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T7_Out_V_S2.Activations.add(new Activation(T7_Out_V_S2, "P_LaneOut_Int3_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_TramStationOut_CaleaFerentari_V_S2"));
         T7_Out_V_S2.GuardMappingList.add(grd1T7_Out_V_S2);
 
-        T7_Out_V_S2.Delay = 0;
+        T7_Out_V_S2.Delay = 1;
         pn.Transitions.add(T7_Out_V_S2);
 
         //----------------------------END T7_Out_V_S2----------------------------------------
@@ -2081,7 +2081,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T11_Out_V_S2.Activations.add(new Activation(T11_Out_V_S2, "P_Lane_PoenaruIn_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int3_V_S2"));
         T11_Out_V_S2.GuardMappingList.add(grd4T11_Out_V_S2);
 
-        T11_Out_V_S2.Delay = 0;
+        T11_Out_V_S2.Delay = 1;
         pn.Transitions.add(T11_Out_V_S2);
 
         //----------------------------END T11_Out_V_S2----------------------------------------
@@ -2148,7 +2148,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T13_Out_V_S2.Activations.add(new Activation(T13_Out_V_S2, "P_Lane_LidlIn_V_S2", TransitionOperation.AddElement, "P_LaneOut_Int4_V_S2"));
         T13_Out_V_S2.GuardMappingList.add(grd4T13_Out_V_S2);
 
-        T13_Out_V_S2.Delay = 0;
+        T13_Out_V_S2.Delay = 1;
         pn.Transitions.add(T13_Out_V_S2);
 
         //----------------------------END T13_Out_V_S2----------------------------------------
@@ -2174,7 +2174,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T15_Out_V_S2.condition= T15_Out_V_S2_Ct11;
         grd1T15_Out_V_S2.Activations.add(new Activation(T15_Out_V_S2, "P_LaneOut_Int6_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_LidlOut_V_S2"));
         T15_Out_V_S2.GuardMappingList.add(grd1T15_Out_V_S2);
-        T15_Out_V_S2.Delay = 0;
+        T15_Out_V_S2.Delay = 1;
         pn.Transitions.add(T15_Out_V_S2);
 
         //----------------------------END T15_Out_V_S2----------------------------------------
@@ -2193,7 +2193,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T17_Out_V_S2.condition= T17_Out_V_S2_Ct11;
         grd1T17_Out_V_S2.Activations.add(new Activation(T17_Out_V_S2, "P_LaneOut_Int6_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int5_V_S2"));
         T17_Out_V_S2.GuardMappingList.add(grd1T17_Out_V_S2);
-        T17_Out_V_S2.Delay = 0;
+        T17_Out_V_S2.Delay = 1;
         pn.Transitions.add(T17_Out_V_S2);
 
         //----------------------------END T17_Out_V_S2----------------------------------------
@@ -2260,7 +2260,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T19_Out_V_S2.Activations.add(new Activation(T19_Out_V_S2, "P_Lane_BenzinarieIn_V_S2", TransitionOperation.AddElement, "P_LaneOut_Int6_V_S2"));
         T19_Out_V_S2.GuardMappingList.add(grd4T19_Out_V_S2);
 
-        T19_Out_V_S2.Delay = 0;
+        T19_Out_V_S2.Delay = 1;
         pn.Transitions.add(T19_Out_V_S2);
 
         //----------------------------END T19_V_S2----------------------------------------
@@ -2286,7 +2286,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T21_Out_V_S2.condition= T21_Out_V_S2_Ct11;
         grd1T21_Out_V_S2.Activations.add(new Activation(T21_Out_V_S2, "P_LaneOut_Int8_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_BenzinarieOut_V_S2"));
         T21_Out_V_S2.GuardMappingList.add(grd1T21_Out_V_S2);
-        T21_Out_V_S2.Delay = 0;
+        T21_Out_V_S2.Delay = 1;
         pn.Transitions.add(T21_Out_V_S2);
 
         //----------------------------END T21_Out_V_S2----------------------------------------
@@ -2305,7 +2305,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T23_Out_V_S2.condition= T23_Out_V_S2_Ct11;
         grd1T23_Out_V_S2.Activations.add(new Activation(T23_Out_V_S2, "P_LaneOut_Int8_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int7_V_S2"));
         T23_Out_V_S2.GuardMappingList.add(grd1T23_Out_V_S2);
-        T23_Out_V_S2.Delay = 0;
+        T23_Out_V_S2.Delay = 1;
         pn.Transitions.add(T23_Out_V_S2);
 
         //----------------------------END T23_Out_V_S2----------------------------------------
@@ -2331,7 +2331,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T27_Out_V_S2.Activations.add(new Activation(T27_Out_V_S2, "P_LaneOut_Int9_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_x_Cross_Lane_V_Out_S2"));
         T27_Out_V_S2.GuardMappingList.add(grd1T27_Out_V_S2);
 
-        T27_Out_V_S2.Delay = 0;
+        T27_Out_V_S2.Delay = 1;
         pn.Transitions.add(T27_Out_V_S2);
         //---------------------------- END T27_Out_V_S2----------------------------------------
 
@@ -2348,7 +2348,7 @@ public class Lanes_Intersection_Bucharest {
         Condition T25_Out_V_S2_C31 = new Condition(T25_Out_V_S2, "P_x_Cross_Lane_V_Out_S2", TransitionCondition.HavePriorityCar);
         GuardMapping grd3T25_In_V_S2 = new GuardMapping();
         grd3T25_In_V_S2.condition= T25_Out_V_S2_C31;
-        grd3T25_In_V_S2.Activations.add(new Activation(T25_Out_V_S2, "P_x_Cross_Lane_V_Out_S2", TransitionOperation.PopElementWithoutTarget, "P_LaneOut_Int8_V_S2"));
+        grd3T25_In_V_S2.Activations.add(new Activation(T25_Out_V_S2, "P_x_Cross_Lane_V_Out_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int8_V_S2"));
         grd3T25_In_V_S2.Activations.add(new Activation(T25_Out_V_S2, "P_Cross_TL_V_S2", TransitionOperation.Move, "P_Cross_TL_V_S2"));
         grd3T25_In_V_S2.Activations.add(new Activation(T25_Out_V_S2, "P_Cross_PTL_V_S2", TransitionOperation.Move, "P_Cross_PTL_V_S2"));
 
@@ -2362,7 +2362,7 @@ public class Lanes_Intersection_Bucharest {
 
         GuardMapping grd1T25_Out_V_S2 = new GuardMapping();
         grd1T25_Out_V_S2.condition= T25_Out_V_S2_Ct11;
-        grd1T25_Out_V_S2.Activations.add(new Activation(T25_Out_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionOperation.PopElementWithoutTarget, "P_LaneOut_Int8_V_S2"));
+        grd1T25_Out_V_S2.Activations.add(new Activation(T25_Out_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int8_V_S2"));
         grd1T25_Out_V_S2.Activations.add(new Activation(T25_Out_V_S2, "P_Cross_TL_V_S2", TransitionOperation.Move, "P_Cross_TL_V_S2"));
         grd1T25_Out_V_S2.Activations.add(new Activation(T25_Out_V_S2, "P_Cross_PTL_V_S2", TransitionOperation.Move, "P_Cross_PTL_V_S2"));
 
@@ -2379,7 +2379,7 @@ public class Lanes_Intersection_Bucharest {
 
         T25_Out_V_S2.GuardMappingList.add(grd2T25_Out_V_S2);
 
-        T25_Out_V_S2.Delay = 0;
+        T25_Out_V_S2.Delay = 1;
         pn.Transitions.add(T25_Out_V_S2);
         //---------------------------- END T25_Out_V_S1----------------------------------------
 
@@ -2403,7 +2403,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T24_In_V_S2.Activations.add(new Activation(T24_In_V_S2, "P_LaneIn_int7_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_x_Cross_Lane_V_In_S2"));
         T24_In_V_S2.GuardMappingList.add(grd1T24_In_V_S2);
 
-        T24_In_V_S2.Delay = 0;
+        T24_In_V_S2.Delay = 1;
         pn.Transitions.add(T24_In_V_S2);
         //---------------------------- END T24_Out_V_S1----------------------------------------
 
@@ -2420,7 +2420,7 @@ public class Lanes_Intersection_Bucharest {
         Condition T26_In_V_S2_C31 = new Condition(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionCondition.HavePriorityCar);
         GuardMapping grd3T26_In_V_S2 = new GuardMapping();
         grd3T26_In_V_S2.condition= T26_In_V_S2_C31;
-        grd3T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionOperation.PopElementWithoutTarget, "P_LaneIn_int8_V_S2"));
+        grd3T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int8_V_S2"));
         grd3T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_Cross_TL_V_S2", TransitionOperation.Move, "P_Cross_TL_V_S2"));
         grd3T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_Cross_PTL_V_S2", TransitionOperation.Move, "P_Cross_PTL_V_S2"));
 
@@ -2434,7 +2434,7 @@ public class Lanes_Intersection_Bucharest {
 
         GuardMapping grd1T26_In_V_S2 = new GuardMapping();
         grd1T26_In_V_S2.condition= T26_In_V_S2_Ct11;
-        grd1T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionOperation.PopElementWithoutTarget, "P_LaneIn_int8_V_S2"));
+        grd1T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_x_Cross_Lane_V_In_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int8_V_S2"));
         grd1T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_Cross_TL_V_S2", TransitionOperation.Move, "P_Cross_TL_V_S2"));
         grd1T26_In_V_S2.Activations.add(new Activation(T26_In_V_S2, "P_Cross_PTL_V_S2", TransitionOperation.Move, "P_Cross_PTL_V_S2"));
 
@@ -2451,7 +2451,7 @@ public class Lanes_Intersection_Bucharest {
 
         T26_In_V_S2.GuardMappingList.add(grd2T26_In_V_S2);
 
-        T26_In_V_S2.Delay = 0;
+        T26_In_V_S2.Delay = 1;
         pn.Transitions.add(T26_In_V_S2);
         //---------------------------- END T26_V_S1----------------------------------------
 
@@ -2494,7 +2494,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T28_In_V_S2.Activations.add(new Activation(T28_In_V_S2, "P_LaneIn_int8_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int9_V_S2"));
         T28_In_V_S2.GuardMappingList.add(grd1T28_In_V_S2);
 
-        T28_In_V_S2.Delay = 0;
+        T28_In_V_S2.Delay = 1;
         pn.Transitions.add(T28_In_V_S2);
         //---------------------------- END T28_In_V_S2----------------------------------------
 
@@ -2510,7 +2510,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T30_In_V_S2.Activations.add(new Activation(T30_In_V_S2, "P_LaneIn_int8_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_NiculaescuOut_V_S2"));
         T30_In_V_S2.GuardMappingList.add(grd1T30_In_V_S2);
 
-        T30_In_V_S2.Delay = 0;
+        T30_In_V_S2.Delay = 1;
         pn.Transitions.add(T30_In_V_S2);
         //---------------------------- END T30_In_V_S2----------------------------------------
 
@@ -2580,7 +2580,7 @@ public class Lanes_Intersection_Bucharest {
         T32_In_V_S2.GuardMappingList.add(grd4T32_In_V_S2);
 
 
-        T32_In_V_S2.Delay = 0;
+        T32_In_V_S2.Delay = 1;
         pn.Transitions.add(T32_In_V_S2);
         //----------------------------END T32_V_S2----------------------------------------
 
@@ -2603,7 +2603,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T34_In_V_S2.Activations.add(new Activation(T34_In_V_S2, "P_LaneIn_int10_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int11_V_S2"));
         T34_In_V_S2.GuardMappingList.add(grd1T34_In_V_S2);
 
-        T34_In_V_S2.Delay = 0;
+        T34_In_V_S2.Delay = 1;
         pn.Transitions.add(T34_In_V_S2);
         //---------------------------- END T34_In_V_S2----------------------------------------
 
@@ -2619,7 +2619,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T36_In_V_S2.Activations.add(new Activation(T36_In_V_S2, "P_LaneIn_int10_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_BarleaOut_V_S2"));
         T36_In_V_S2.GuardMappingList.add(grd1T36_In_V_S2);
 
-        T36_In_V_S2.Delay = 0;
+        T36_In_V_S2.Delay = 1;
         pn.Transitions.add(T36_In_V_S2);
         //---------------------------- END T36_In_V_S2----------------------------------------
 
@@ -2681,7 +2681,7 @@ public class Lanes_Intersection_Bucharest {
         T38_In_V_S2.GuardMappingList.add(grd4T38_In_V_S2);
 
 
-        T38_In_V_S2.Delay = 0;
+        T38_In_V_S2.Delay = 1;
         pn.Transitions.add(T38_In_V_S2);
         //----------------------------END T38_In_V_S2----------------------------------------
 
@@ -2711,7 +2711,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T40_In_V_S2.Activations.add(new Activation(T40_In_V_S2, "P_LaneIn_int12_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_CarcalechiOut_V_S2"));
         T40_In_V_S2.GuardMappingList.add(grd1T40_In_V_S2);
 
-        T40_In_V_S2.Delay = 0;
+        T40_In_V_S2.Delay = 1;
         pn.Transitions.add(T40_In_V_S2);
         //---------------------------- END T40_In_V_S2----------------------------------------
 
@@ -2738,7 +2738,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T42_In_V_S2.Activations.add(new Activation(T42_In_V_S2, "P_LaneIn_int12_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int13_V_S2"));
         T42_In_V_S2.GuardMappingList.add(grd1T42_In_V_S2);
 
-        T42_In_V_S2.Delay = 0;
+        T42_In_V_S2.Delay = 1;
         pn.Transitions.add(T42_In_V_S2);
         //---------------------------- END T42_In_V_S2----------------------------------------
 
@@ -2799,7 +2799,7 @@ public class Lanes_Intersection_Bucharest {
         T44_In_V_S2.GuardMappingList.add(grd4T44_In_V_S2);
 
 
-        T44_In_V_S2.Delay = 0;
+        T44_In_V_S2.Delay = 1;
         pn.Transitions.add(T44_In_V_S2);
         //----------------------------END T44_In_V_S2----------------------------------------
 
@@ -2820,7 +2820,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T46_In_V_S2.Activations.add(new Activation(T46_In_V_S2, "P_LaneIn_int14_V_S2", TransitionOperation.PopElementWithTarget, "P_Lane_McDonaldsOut_V_S2"));
         T46_In_V_S2.GuardMappingList.add(grd1T46_In_V_S2);
 
-        T46_In_V_S2.Delay = 0;
+        T46_In_V_S2.Delay = 1;
         pn.Transitions.add(T46_In_V_S2);
         //---------------------------- END T46_In_V_S2----------------------------------------
 
@@ -2838,7 +2838,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T48_In_V_S2.Activations.add(new Activation(T48_In_V_S2, "P_LaneIn_int14_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int15_V_S2"));
         T48_In_V_S2.GuardMappingList.add(grd1T48_In_V_S2);
 
-        T48_In_V_S2.Delay = 0;
+        T48_In_V_S2.Delay = 1;
         pn.Transitions.add(T48_In_V_S2);
         //---------------------------- END T48_In_V_S2----------------------------------------
 
@@ -2907,7 +2907,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T50_In_V_S2.Activations.add(new Activation(T50_In_V_S2, "P_Lane_McDonaldsIn_V_S2", TransitionOperation.AddElement, "P_LaneIn_int16_V_S2"));
         T50_In_V_S2.GuardMappingList.add(grd4T50_In_V_S2);
 
-        T50_In_V_S2.Delay = 0;
+        T50_In_V_S2.Delay = 1;
         pn.Transitions.add(T50_In_V_S2);
         //----------------------------END T50_In_V_S2----------------------------------------
 
@@ -2931,7 +2931,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T52_In_V_S2.Activations.add(new Activation(T52_In_V_S2, "P_LaneIn_int16_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_x_Lane_V_S2"));
         T52_In_V_S2.GuardMappingList.add(grd1T52_In_V_S2);
 
-        T52_In_V_S2.Delay = 0;
+        T52_In_V_S2.Delay = 1;
         pn.Transitions.add(T52_In_V_S2);
         //---------------------------- END T52_V_S2----------------------------------------
 
@@ -2957,7 +2957,7 @@ public class Lanes_Intersection_Bucharest {
         grdT58_In_V_S2.Activations.add(new Activation(T58_In_V_S2, "full", TransitionOperation.SendOverNetwork, "OP_V_S2"));
         T58_In_V_S2.GuardMappingList.add(grdT58_In_V_S2);
 
-        T58_In_V_S2.Delay = 0;
+        T58_In_V_S2.Delay = 1;
         pn.Transitions.add(T58_In_V_S2);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -2994,7 +2994,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T54_In_V_S2.Activations.add(new Activation(T54_In_V_S2, "P_TL_V_S2", TransitionOperation.Move, "P_TL_V_S2"));
         T54_In_V_S2.GuardMappingList.add(grd1T54_In_V_S2);
 
-        T54_In_V_S2.Delay = 0;
+        T54_In_V_S2.Delay = 1;
         pn.Transitions.add(T54_In_V_S2);
         //---------------------------- END T54_In_V_S1----------------------------------------
 
@@ -3016,7 +3016,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T56_In_V_S2.Activations.add(new Activation(T56_In_V_S2, "P_b_Lane_V_S2", TransitionOperation.AddElement, "P_I_S2"));
         T56_In_V_S2.GuardMappingList.add(grd1T56_In_V_S2);
 
-        T56_In_V_S2.Delay = 0;
+        T56_In_V_S2.Delay = 1;
         pn.Transitions.add(T56_In_V_S2);
         //---------------------------- END T56_In_V_S2----------------------------------------
 
@@ -3159,7 +3159,7 @@ public class Lanes_Intersection_Bucharest {
         grd9T29_Out_V_S2.Activations.add(new Activation(T29_Out_V_S2, "P_TramStation_SoseauaProgresului_V_Out_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int9_V_S2"));
         T29_Out_V_S2.GuardMappingList.add(grd9T29_Out_V_S2);
 
-        T29_Out_V_S2.Delay = 0;
+        T29_Out_V_S2.Delay = 1;
         pn.Transitions.add(T29_Out_V_S2);
 
         //-------------------------------END T29_Out_V_S2-------------------------------------------------
@@ -3193,7 +3193,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T31_Out_V_S2.condition= T31_Out_V_S2_Ct11;
         grd1T31_Out_V_S2.Activations.add(new Activation(T31_Out_V_S2, "P_LaneOut_Int11_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_BusStation_SoseauaProgresului_V_S2"));
         T31_Out_V_S2.GuardMappingList.add(grd1T31_Out_V_S2);
-        T31_Out_V_S2.Delay = 0;
+        T31_Out_V_S2.Delay = 1;
         pn.Transitions.add(T31_Out_V_S2);
 
         //----------------------------END T31_Out_V_S2----------------------------------------
@@ -3212,7 +3212,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T33_Out_V_S2.condition= T33_Out_V_S2_Ct11;
         grd1T33_Out_V_S2.Activations.add(new Activation(T33_Out_V_S2, "P_LaneOut_Int11_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int10_V_S2"));
         T33_Out_V_S2.GuardMappingList.add(grd1T33_Out_V_S2);
-        T33_Out_V_S2.Delay = 0;
+        T33_Out_V_S2.Delay = 1;
         pn.Transitions.add(T33_Out_V_S2);
 
         //----------------------------END T33_Out_V_S2----------------------------------------
@@ -3231,7 +3231,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T35_Out_V_S2.Activations.add(new Activation(T35_Out_V_S2, "P_LaneOut_Int11_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_TramStation_SoseauaProgresului_V_S2"));
         T35_Out_V_S2.GuardMappingList.add(grd1T35_Out_V_S2);
 
-        T35_Out_V_S2.Delay = 0;
+        T35_Out_V_S2.Delay = 1;
         pn.Transitions.add(T35_Out_V_S2);
 
         //----------------------------END T35_Out_V_S2----------------------------------------
@@ -3338,7 +3338,7 @@ public class Lanes_Intersection_Bucharest {
         T41_Out_V_S2.GuardMappingList.add(grd4T41_In_V_S2);
 
 
-        T41_Out_V_S2.Delay = 0;
+        T41_Out_V_S2.Delay = 1;
         pn.Transitions.add(T41_Out_V_S2);
         //----------------------------END T41_Out_V_S2----------------------------------------
 
@@ -3363,7 +3363,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T43_Out_V_S2.condition= T43_Out_V_S2_Ct11;
         grd1T43_Out_V_S2.Activations.add(new Activation(T43_Out_V_S2, "P_LaneOut_Int13_V_S2", TransitionOperation.PopElementWithTarget, "P_LaneMarket_V_Out_S2"));
         T43_Out_V_S2.GuardMappingList.add(grd1T43_Out_V_S2);
-        T43_Out_V_S2.Delay = 0;
+        T43_Out_V_S2.Delay = 1;
         pn.Transitions.add(T43_Out_V_S2);
 
         //----------------------------END T43_Out_V_S2----------------------------------------
@@ -3382,7 +3382,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T45_Out_V_S2.condition= T45_Out_V_S2_Ct11;
         grd1T45_Out_V_S2.Activations.add(new Activation(T45_Out_V_S2, "P_LaneOut_Int13_V_S2", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int12_V_S2"));
         T45_Out_V_S2.GuardMappingList.add(grd1T45_Out_V_S2);
-        T45_Out_V_S2.Delay = 0;
+        T45_Out_V_S2.Delay = 1;
         pn.Transitions.add(T45_Out_V_S2);
 
         //----------------------------END T45_Out_V_S2----------------------------------------
@@ -3408,7 +3408,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T49_Out_V_S2.Activations.add(new Activation(T49_Out_V_S2, "P_I_S2", TransitionOperation.PopElementWithTargetToQueue, "P_O_Lane_V_S2"));
         T49_Out_V_S2.GuardMappingList.add(grd1T49_Out_V_S2);
 
-        T49_Out_V_S2.Delay = 0;
+        T49_Out_V_S2.Delay = 1;
         pn.Transitions.add(T49_Out_V_S2);
 
         //----------------------------END T49_Out_V_S2----------------------------------------
@@ -3425,10 +3425,10 @@ public class Lanes_Intersection_Bucharest {
         T51_Out_V_S2_Ct11.SetNextCondition(LogicConnector.AND, T51_Out_V_S2_Ct12);
         GuardMapping grd1T51_Out_V_S2 = new GuardMapping();
         grd1T51_Out_V_S2.condition = T51_Out_V_S2_Ct11;
-        grd1T51_Out_V_S2.Activations.add(new Activation(T51_Out_V_S2, "P_O_Lane_V_S2", TransitionOperation.PopElementWithoutTarget, "P_LaneOut_Int13_V_S2"));
+        grd1T51_Out_V_S2.Activations.add(new Activation(T51_Out_V_S2, "P_O_Lane_V_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int13_V_S2"));
         T51_Out_V_S2.GuardMappingList.add(grd1T51_Out_V_S2);
 
-        T51_Out_V_S2.Delay = 0;
+        T51_Out_V_S2.Delay = 1;
         pn.Transitions.add(T51_Out_V_S2);
 
         //----------------------------END T51_Out_V_S2----------------------------------------
@@ -3469,7 +3469,7 @@ public class Lanes_Intersection_Bucharest {
         grdT6_In_N_S2.Activations.add(new Activation(T6_In_N_S2, "full", TransitionOperation.SendOverNetwork, "OP_N_S2"));
         T6_In_N_S2.GuardMappingList.add(grdT6_In_N_S2);
 
-        T6_In_N_S2.Delay = 0;
+        T6_In_N_S2.Delay = 1;
         pn.Transitions.add(T6_In_N_S2);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -3488,7 +3488,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T0_In_N_S2.Activations.add(new Activation(T0_In_N_S2, "P_LaneIn_N_S1", TransitionOperation.AddElement, "P_x_Lane_N_S1"));
         T0_In_N_S2.GuardMappingList.add(grd1T0_In_N_S2);
 
-        T0_In_N_S2.Delay = 0;
+        T0_In_N_S2.Delay = 1;
         pn.Transitions.add(T0_In_N_S2);
         //---------------------------- END T0_N_S2----------------------------------------
 
@@ -3535,7 +3535,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T4_In_N_S2.Activations.add(new Activation(T4_In_N_S2, "P_b_Lane_N_S2", TransitionOperation.AddElement, "P_I_S2"));
         T4_In_N_S2.GuardMappingList.add(grd1T4_In_N_S2);
 
-        T4_In_N_S2.Delay = 0;
+        T4_In_N_S2.Delay = 1;
         pn.Transitions.add(T4_In_N_S2);
         //---------------------------- END T4_In_N_S1----------------------------------------
 
@@ -3562,7 +3562,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T1_Out_N_S2.Activations.add(new Activation(T1_Out_N_S2, "P_O_Lane_N_S2", TransitionOperation.PopElementWithoutTarget, "P_Oe_Lane_N_S2"));
         T1_Out_N_S2.GuardMappingList.add(grd1T1_Out_N_S2);
 
-        T1_Out_N_S2.Delay = 0;
+        T1_Out_N_S2.Delay = 1;
         pn.Transitions.add(T1_Out_N_S2);
 
         //----------------------------END T1_N_S1----------------------------------------
@@ -3584,7 +3584,7 @@ public class Lanes_Intersection_Bucharest {
         grd2T3_Out_N_S2.Activations.add(new Activation(T3_Out_N_S2, "P_I_S2", TransitionOperation.PopElementWithTargetToQueue, "P_O_Lane_N_S2"));
         T3_Out_N_S2.GuardMappingList.add(grd2T3_Out_N_S2);
 
-        T3_Out_N_S2.Delay = 0;
+        T3_Out_N_S2.Delay = 1;
         pn.Transitions.add(T3_Out_N_S2);
 
         //----------------------------END T3_Out_N_S1----------------------------------------
@@ -3625,7 +3625,7 @@ public class Lanes_Intersection_Bucharest {
         grdT6_In_S_S2.Activations.add(new Activation(T6_In_S_S2, "full", TransitionOperation.SendOverNetwork, "OP_S_S2"));
         T6_In_S_S2.GuardMappingList.add(grdT6_In_S_S2);
 
-        T6_In_S_S2.Delay = 0;
+        T6_In_S_S2.Delay = 1;
         pn.Transitions.add(T6_In_S_S2);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -3644,7 +3644,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T0_In_S_S2.Activations.add(new Activation(T0_In_S_S2, "P_LaneIn_int1_S_S2", TransitionOperation.AddElement, "P_x_Lane_S_S2"));
         T0_In_S_S2.GuardMappingList.add(grd1T0_In_S_S2);
 
-        T0_In_S_S2.Delay = 0;
+        T0_In_S_S2.Delay = 1;
         pn.Transitions.add(T0_In_S_S2);
         //---------------------------- END T0_In_S_S2----------------------------------------
 
@@ -3676,7 +3676,7 @@ public class Lanes_Intersection_Bucharest {
 
         T2_In_S_S2.GuardMappingList.add(grd1T2_In_S_S2);
 
-        T2_In_S_S2.Delay = 0;
+        T2_In_S_S2.Delay = 1;
         pn.Transitions.add(T2_In_S_S2);
         //---------------------------- END T2_In_S_S1----------------------------------------
 
@@ -3695,7 +3695,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T4_In_S_S2.Activations.add(new Activation(T4_In_S_S2, "P_b_Lane_S_S2", TransitionOperation.AddElement, "P_I_S2"));
         T4_In_S_S2.GuardMappingList.add(grd1T4_In_S_S2);
 
-        T4_In_S_S2.Delay = 0;
+        T4_In_S_S2.Delay = 1;
         pn.Transitions.add(T4_In_S_S2);
         //---------------------------- END T4_S_S2----------------------------------------
 
@@ -3722,7 +3722,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T1_Out_S_S2.Activations.add(new Activation(T1_Out_S_S2, "P_O_Lane_S_S2", TransitionOperation.PopElementWithoutTarget, "P_Oe_Lane_S_S2"));
         T1_Out_S_S2.GuardMappingList.add(grd1T1_Out_S_S2);
 
-        T1_Out_S_S2.Delay = 0;
+        T1_Out_S_S2.Delay = 1;
         pn.Transitions.add(T1_Out_S_S2);
 
         //----------------------------END T1_Out_S_S2----------------------------------------
@@ -3744,7 +3744,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T3_Out_S_S2.Activations.add(new Activation(T3_Out_S_S2, "P_I_S2", TransitionOperation.PopElementWithTargetToQueue, "P_O_Lane_S_S2"));
         T3_Out_S_S2.GuardMappingList.add(grd1T3_Out_S_S2);
 
-        T3_Out_S_S2.Delay = 0;
+        T3_Out_S_S2.Delay = 1;
         pn.Transitions.add(T3_Out_S_S2);
 
         //----------------------------END T3_S_S2----------------------------------------
@@ -3782,7 +3782,7 @@ public class Lanes_Intersection_Bucharest {
         grdT6_In_E_S2.Activations.add(new Activation(T6_In_E_S2, "full", TransitionOperation.SendOverNetwork, "OP_E_S2"));
         T6_In_S_S2.GuardMappingList.add(grdT6_In_E_S2);
 
-        T6_In_E_S2.Delay = 0;
+        T6_In_E_S2.Delay = 1;
         pn.Transitions.add(T6_In_E_S2);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -3801,7 +3801,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T0_In_E_S2.Activations.add(new Activation(T0_In_E_S2, "P_LaneOut_Int1_V_S3", TransitionOperation.PopElementWithoutTargetToQueue, "P_x_Lane_E_S2"));
         T0_In_E_S2.GuardMappingList.add(grd1T0_In_E_S2);
 
-        T0_In_E_S2.Delay = 0;
+        T0_In_E_S2.Delay = 1;
         pn.Transitions.add(T0_In_E_S2);
         //---------------------------- END T0_In_E_S2----------------------------------------
 
@@ -3833,7 +3833,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T2_In_E_S2.Activations.add(new Activation(T2_In_E_S2, "P_TL_E_S2", TransitionOperation.Move, "P_TL_E_S2"));
         T2_In_E_S2.GuardMappingList.add(grd1T2_In_E_S2);
 
-        T2_In_E_S2.Delay = 0;
+        T2_In_E_S2.Delay = 1;
         pn.Transitions.add(T2_In_E_S2);
         //---------------------------- END T2_In_E_S1----------------------------------------
 
@@ -3852,7 +3852,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T4_In_E_S2.Activations.add(new Activation(T4_In_E_S2, "P_b_Lane_E_S2", TransitionOperation.AddElement, "P_I_S2"));
         T4_In_E_S2.GuardMappingList.add(grd1T4_In_E_S2);
 
-        T4_In_E_S2.Delay = 0;
+        T4_In_E_S2.Delay = 1;
         pn.Transitions.add(T4_In_E_S2);
         //---------------------------- END T4_In_E_S2---------------------------------------
 
@@ -3879,7 +3879,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T3_Out_E_S2.Activations.add(new Activation(T3_Out_E_S2, "P_I_S2", TransitionOperation.PopElementWithTargetToQueue, "P_O_Lane_E_S2"));
         T3_Out_E_S2.GuardMappingList.add(grd1T3_Out_E_S2);
 
-        T3_Out_E_S2.Delay = 0;
+        T3_Out_E_S2.Delay = 1;
         pn.Transitions.add(T3_Out_E_S2);
 
         //----------------------------END T3_E_S1----------------------------------------
@@ -3899,7 +3899,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T1_Out_E_S2.Activations.add(new Activation(T1_Out_E_S2, "P_O_Lane_E_S2", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int1_V_S3"));
         T1_Out_E_S2.GuardMappingList.add(grd1T1_Out_E_S2);
 
-        T1_Out_E_S2.Delay = 0;
+        T1_Out_E_S2.Delay = 1;
         pn.Transitions.add(T1_Out_E_S2);
 
         //----------------------------END T1_Out_E_S1----------------------------------------
@@ -3969,7 +3969,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T0_In_V_S3.Activations.add(new Activation(T0_In_V_S3, "P_LaneIn_int1_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_BusStationProgresului_V_S3"));
         T0_In_V_S3.GuardMappingList.add(grd1T0_In_V_S3);
 
-        T0_In_V_S3.Delay = 0;
+        T0_In_V_S3.Delay = 1;
         pn.Transitions.add(T0_In_V_S3);
 
         //----------------------------END T0_In_V_S3----------------------------------------
@@ -3988,7 +3988,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T2_In_V_S3.Activations.add(new Activation(T2_In_V_S3, "P_LaneIn_int1_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int2_V_S3"));
         T2_In_V_S3.GuardMappingList.add(grd1T2_In_V_S3);
 
-        T2_In_V_S3.Delay = 0;
+        T2_In_V_S3.Delay = 1;
         pn.Transitions.add(T2_In_V_S3);
         //---------------------------- END T2_In_V_S3----------------------------------------
 
@@ -4052,7 +4052,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T8_In_V_S3.Activations.add(new Activation(T8_In_V_S3, "P_LaneIn_int1_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_TramStationProgresului_V_S3"));
         T8_In_V_S3.GuardMappingList.add(grd1T8_In_V_S3);
 
-        T8_In_V_S3.Delay = 0;
+        T8_In_V_S3.Delay = 1;
         pn.Transitions.add(T8_In_V_S3);
 
         //----------------------------END T8_In_V_S3----------------------------------------
@@ -4195,7 +4195,7 @@ public class Lanes_Intersection_Bucharest {
         grd9T6_In_V_S3.Activations.add(new Activation(T6_In_V_S3, "P_LaneIn_TramStationProgresuluiOut_V_S3", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int3_V_S3"));
         T6_In_V_S3.GuardMappingList.add(grd9T6_In_V_S3);
 
-        T6_In_V_S3.Delay = 0;
+        T6_In_V_S3.Delay = 1;
         pn.Transitions.add(T6_In_V_S3);
 
         //-------------------------------END T6_In_V_S1-------------------------------------------------
@@ -4217,7 +4217,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T12_In_V_S3.Activations.add(new Activation(T12_In_V_S3, "P_LaneIn_int3_V_S3", TransitionOperation.PopElementWithTarget, "P_Lane_BarbatescuVechiOut_V_S3"));
         T12_In_V_S3.GuardMappingList.add(grd1T12_In_V_S3);
 
-        T12_In_V_S3.Delay = 0;
+        T12_In_V_S3.Delay = 1;
         pn.Transitions.add(T12_In_V_S3);
         //---------------------------- END T12_In_V_S3----------------------------------------
 
@@ -4233,7 +4233,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T14_In_V_S3.Activations.add(new Activation(T14_In_V_S3, "P_LaneIn_int3_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int4_V_S3"));
         T14_In_V_S3.GuardMappingList.add(grd1T14_In_V_S3);
 
-        T14_In_V_S3.Delay = 0;
+        T14_In_V_S3.Delay = 1;
         pn.Transitions.add(T14_In_V_S3);
         //---------------------------- END T14_In_V_S3----------------------------------------
 
@@ -4303,7 +4303,7 @@ public class Lanes_Intersection_Bucharest {
         T16_In_V_S3.GuardMappingList.add(grd4T16_In_V_S3);
 
 
-        T16_In_V_S3.Delay = 0;
+        T16_In_V_S3.Delay = 1;
         pn.Transitions.add(T16_In_V_S3);
         //----------------------------END T16_In_V_S2----------------------------------------
 
@@ -4332,7 +4332,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T18_In_V_S3.Activations.add(new Activation(T18_In_V_S3, "P_LaneIn_int5_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_TramStationProgresului_V_S3"));
         T18_In_V_S3.GuardMappingList.add(grd1T18_In_V_S3);
 
-        T18_In_V_S3.Delay = 0;
+        T18_In_V_S3.Delay = 1;
         pn.Transitions.add(T18_In_V_S3);
 
         //----------------------------END T18_In_V_S3----------------------------------------
@@ -4371,7 +4371,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T22_In_V_S3.Activations.add(new Activation(T22_In_V_S3, "P_LaneIn_int5_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneIn_int6_V_S3"));
         T22_In_V_S3.GuardMappingList.add(grd1T22_In_V_S3);
 
-        T22_In_V_S3.Delay = 0;
+        T22_In_V_S3.Delay = 1;
         pn.Transitions.add(T22_In_V_S3);
         //---------------------------- END T22_In_V_S3----------------------------------------
 
@@ -4420,7 +4420,7 @@ public class Lanes_Intersection_Bucharest {
         grd2T24_In_V_S3.Activations.add(new Activation(T24_In_V_S3, "P_LaneIn_TramStationChirigiuOut_V_S3", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneIn_int7_V_S3"));
         T24_In_V_S3.GuardMappingList.add(grd2T24_In_V_S3);
 
-        T24_In_V_S3.Delay = 0;
+        T24_In_V_S3.Delay = 1;
         pn.Transitions.add(T24_In_V_S3);
 
         //----------------------------END T24_In_V_S3----------------------------------------
@@ -4498,7 +4498,7 @@ public class Lanes_Intersection_Bucharest {
         T1_Out_V_S3.GuardMappingList.add(grd4T1_Out_V_S3);
 
 
-        T1_Out_V_S3.Delay = 0;
+        T1_Out_V_S3.Delay = 1;
         pn.Transitions.add(T1_Out_V_S3);
         //----------------------------END T1_V_S3----------------------------------------
 
@@ -4523,7 +4523,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T3_Out_V_S3.condition= T3_Out_V_S3_Ct11;
         grd1T3_Out_V_S3.Activations.add(new Activation(T3_Out_V_S3, "P_LaneOut_Int3_V_S3", TransitionOperation.PopElementWithTarget, "P_LaneDinca_V_Out_S3"));
         T3_Out_V_S3.GuardMappingList.add(grd1T3_Out_V_S3);
-        T3_Out_V_S3.Delay = 0;
+        T3_Out_V_S3.Delay = 1;
         pn.Transitions.add(T3_Out_V_S3);
 
         //----------------------------END T3_Out_V_S3----------------------------------------
@@ -4542,7 +4542,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T5_Out_V_S3.condition= T5_Out_V_S3_Ct11;
         grd1T5_Out_V_S3.Activations.add(new Activation(T5_Out_V_S3, "P_LaneOut_Int3_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int2_V_S3"));
         T5_Out_V_S3.GuardMappingList.add(grd1T5_Out_V_S3);
-        T5_Out_V_S3.Delay = 0;
+        T5_Out_V_S3.Delay = 1;
         pn.Transitions.add(T5_Out_V_S3);
 
         //----------------------------END T5_Out_V_S3----------------------------------------
@@ -4568,7 +4568,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T7_Out_V_S3.condition= T7_Out_V_S3_Ct11;
         grd1T7_Out_V_S3.Activations.add(new Activation(T7_Out_V_S3, "P_LaneOut_Int4_V_S3", TransitionOperation.PopElementWithTarget, "P_LaneRaditei_V_Out_S3"));
         T7_Out_V_S3.GuardMappingList.add(grd1T7_Out_V_S3);
-        T7_Out_V_S3.Delay = 0;
+        T7_Out_V_S3.Delay = 1;
         pn.Transitions.add(T7_Out_V_S3);
 
         //----------------------------END T7_Out_V_S3----------------------------------------
@@ -4587,7 +4587,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T9_Out_V_S3.condition= T9_Out_V_S3_Ct11;
         grd1T9_Out_V_S3.Activations.add(new Activation(T9_Out_V_S3, "P_LaneOut_Int4_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int3_V_S3"));
         T9_Out_V_S3.GuardMappingList.add(grd1T9_Out_V_S3);
-        T9_Out_V_S3.Delay = 0;
+        T9_Out_V_S3.Delay = 1;
         pn.Transitions.add(T9_Out_V_S3);
 
         //----------------------------END T9_Out_V_S3----------------------------------------
@@ -4656,7 +4656,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T11_Out_V_S3.Activations.add(new Activation(T11_Out_V_S3, "P_LaneOut_Int5_V_S3", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int4_V_S3"));
         T11_Out_V_S3.GuardMappingList.add(grd4T11_Out_V_S3);
 
-        T11_Out_V_S3.Delay = 0;
+        T11_Out_V_S3.Delay = 1;
         pn.Transitions.add(T11_Out_V_S3);
 
         //----------------------------END T11_Out_V_S3----------------------------------------
@@ -4685,7 +4685,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T13_Out_V_S3.condition= T13_Out_V_S3_Ct11;
         grd1T13_Out_V_S3.Activations.add(new Activation(T13_Out_V_S3, "P_LaneOut_Int6_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_BusStation_Chirigiu_V_S3"));
         T13_Out_V_S3.GuardMappingList.add(grd1T13_Out_V_S3);
-        T13_Out_V_S3.Delay = 0;
+        T13_Out_V_S3.Delay = 1;
         pn.Transitions.add(T13_Out_V_S3);
 
         //----------------------------END T13_Out_V_S3----------------------------------------
@@ -4704,7 +4704,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T15_Out_V_S3.condition= T15_Out_V_S3_Ct11;
         grd1T15_Out_V_S3.Activations.add(new Activation(T15_Out_V_S3, "P_LaneOut_Int6_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int5_V_S3"));
         T15_Out_V_S3.GuardMappingList.add(grd1T15_Out_V_S3);
-        T15_Out_V_S3.Delay = 0;
+        T15_Out_V_S3.Delay = 1;
         pn.Transitions.add(T15_Out_V_S3);
 
         //----------------------------END T15_Out_V_S3----------------------------------------
@@ -4773,7 +4773,7 @@ public class Lanes_Intersection_Bucharest {
         grd4T17_Out_V_S3.Activations.add(new Activation(T17_Out_V_S3, "P_LaneOut_Int7_V_S3", TransitionOperation.PopElementWithoutTargetToQueue, "P_LaneOut_Int6_V_S3"));
         T17_Out_V_S3.GuardMappingList.add(grd4T17_Out_V_S3);
 
-        T17_Out_V_S3.Delay = 0;
+        T17_Out_V_S3.Delay = 1;
         pn.Transitions.add(T17_Out_V_S3);
 
         //----------------------------END T17_Out_V_S3----------------------------------------
@@ -4794,7 +4794,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T19_Out_V_S3.Activations.add(new Activation(T19_Out_V_S3, "P_LaneOut_Int8_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_Int7_V_S3"));
         T19_Out_V_S3.GuardMappingList.add(grd1T19_Out_V_S3);
 
-        T19_Out_V_S3.Delay = 0;
+        T19_Out_V_S3.Delay = 1;
         pn.Transitions.add(T19_Out_V_S3);
 
         //----------------------------END T19_Out_V_S3----------------------------------------
@@ -4814,7 +4814,7 @@ public class Lanes_Intersection_Bucharest {
         grd1T21_Out_V_S3.Activations.add(new Activation(T21_Out_V_S3, "P_LaneOut_Int8_V_S3", TransitionOperation.PopElementWithTargetToQueue, "P_LaneOut_TramStationChirigiu_V_S3"));
         T21_Out_V_S3.GuardMappingList.add(grd1T21_Out_V_S3);
 
-        T21_Out_V_S3.Delay = 0;
+        T21_Out_V_S3.Delay = 1;
         pn.Transitions.add(T21_Out_V_S3);
 
         //----------------------------END T21_Out_V_S3----------------------------------------
