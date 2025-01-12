@@ -345,7 +345,6 @@ public class Lanes_Intersection_Bucharest {
         grdT22_In_V_S1.Activations.add(new Activation(T22_In_V_S1, "full", TransitionOperation.SendOverNetwork, "OP_V_S1"));
         T22_In_V_S1.GuardMappingList.add(grdT22_In_V_S1);
 
-        T22_In_V_S1.Delay = 1;
         pn.Transitions.add(T22_In_V_S1);
         //////////////////////////////////////////////////////////////////////////////////////////////////
 

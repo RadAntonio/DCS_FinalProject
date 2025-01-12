@@ -331,7 +331,7 @@ public class Controller4FIntersection2 {
         grdT_f12.Activations.add(new Activation(t2, "Ten", TransitionOperation.DynamicDelay, ""));
         t_f1.GuardMappingList.add(grdT_f12);
 
-        t_f1.Delay = 5;
+        t_f1.Delay = 0;
         pn.Transitions.add(t_f1);
 
         // ---------------------------- T_f2 ------------------------------------
@@ -360,7 +360,7 @@ public class Controller4FIntersection2 {
         grdT_f22.Activations.add(new Activation(t4, "Ten", TransitionOperation.DynamicDelay, ""));
         t_f2.GuardMappingList.add(grdT_f22);
 
-        t_f2.Delay = 5;
+        t_f2.Delay = 0;
         pn.Transitions.add(t_f2);
 
         // ---------------------------- T_f3 ------------------------------------
@@ -389,7 +389,7 @@ public class Controller4FIntersection2 {
         grdT_f32.Activations.add(new Activation(t6, "Ten", TransitionOperation.DynamicDelay, ""));
         t_f3.GuardMappingList.add(grdT_f32);
 
-        t_f3.Delay = 5;
+        t_f3.Delay = 0;
         pn.Transitions.add(t_f3);
 
         // ---------------------------- T_f4 ------------------------------------
@@ -418,7 +418,7 @@ public class Controller4FIntersection2 {
         grdT_f42.Activations.add(new Activation(t8, "Ten", TransitionOperation.DynamicDelay, ""));
         t_f4.GuardMappingList.add(grdT_f42);
 
-        t_f4.Delay = 5;
+        t_f4.Delay = 0;
         pn.Transitions.add(t_f4);
 
         // ----------------------------------------------------------------------

@@ -17,7 +17,7 @@ public class ControllerPedestriansCrossing {
 
     public static void main (String []args) {
         PetriNet pn = new PetriNet();
-        pn.PetriNetName = "Controller";
+        pn.PetriNetName = "Controller Pedestrians";
         pn.SetName("Controller");
         pn.NetworkPort = 1083;
 
