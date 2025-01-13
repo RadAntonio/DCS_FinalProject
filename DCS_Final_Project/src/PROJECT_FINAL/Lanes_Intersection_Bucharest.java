@@ -334,7 +334,7 @@ public class Lanes_Intersection_Bucharest {
         T22_In_V_S1.TransitionName = "T22_In_V_S1";
         T22_In_V_S1.InputPlaceName.add("P_LaneIn_int5_V_S1");
         T22_In_V_S1.InputPlaceName.add("P_x_Lane_V_S1");
-        T22_In_V_S1.IsAsync = true;
+        //T22_In_V_S1.IsAsync = true;
 
         Condition T22_In_V_S1_Ct1 = new Condition(T22_In_V_S1, "P_LaneIn_int5_V_S1", TransitionCondition.HaveCar);
         Condition T22_In_V_S1_Ct2 = new Condition(T22_In_V_S1, "P_x_Lane_V_S1", TransitionCondition.CanNotAddCars);
@@ -806,7 +806,7 @@ public class Lanes_Intersection_Bucharest {
         T6_In_N_S1.TransitionName = "T6_In_N_S1";
         T6_In_N_S1.InputPlaceName.add("P_LaneIn_N_S1");
         T6_In_N_S1.InputPlaceName.add("P_x_Lane_N_S1");
-        T6_In_N_S1.IsAsync = true;
+        //T6_In_N_S1.IsAsync = true;
 
         Condition T6_In_N_S1_Ct1 = new Condition(T6_In_N_S1, "P_LaneIn_N_S1", TransitionCondition.NotNull);
         Condition T6_In_N_S1_Ct2 = new Condition(T6_In_N_S1, "P_x_Lane_N_S1", TransitionCondition.CanNotAddCars);
@@ -962,7 +962,7 @@ public class Lanes_Intersection_Bucharest {
         T6_In_S_S1.TransitionName = "T6_In_N_S1";
         T6_In_S_S1.InputPlaceName.add("P_LaneIn_int1_S_S1");
         T6_In_S_S1.InputPlaceName.add("P_x_Lane_S_S1");
-        T6_In_S_S1.IsAsync = true;
+        //T6_In_S_S1.IsAsync = true;
 
         Condition T6_In_S_S1_Ct1 = new Condition(T6_In_S_S1, "P_LaneIn_int1_S_S1", TransitionCondition.NotNull);
         Condition T6_In_S_S1_Ct2 = new Condition(T6_In_S_S1, "P_x_Lane_S_S1", TransitionCondition.CanNotAddCars);
@@ -1118,7 +1118,7 @@ public class Lanes_Intersection_Bucharest {
         T6_In_E_S1.TransitionName = "T6_In_E_S1";
         T6_In_E_S1.InputPlaceName.add("P_LaneOut_Int1_V_S2");
         T6_In_E_S1.InputPlaceName.add("P_x_Lane_E_S1");
-        T6_In_E_S1.IsAsync = true;
+        //T6_In_E_S1.IsAsync = true;
 
         Condition T6_In_E_S1_Ct1 = new Condition(T6_In_E_S1, "P_LaneOut_Int1_V_S2", TransitionCondition.HaveCar);
         Condition T6_In_E_S1_Ct2 = new Condition(T6_In_E_S1, "P_x_Lane_S_S1", TransitionCondition.CanNotAddCars);
@@ -2945,7 +2945,7 @@ public class Lanes_Intersection_Bucharest {
         T58_In_V_S2.TransitionName = "T58_In_V_S2";
         T58_In_V_S2.InputPlaceName.add("P_LaneIn_int16_V_S2");
         T58_In_V_S2.InputPlaceName.add("P_x_Lane_V_S2");
-        T58_In_V_S2.IsAsync = true;
+        //T58_In_V_S2.IsAsync = true;
 
         Condition T58_In_V_S2_Ct1 = new Condition(T58_In_V_S2, "P_LaneIn_int16_V_S2", TransitionCondition.HaveCar);
         Condition T58_In_V_S2_Ct2 = new Condition(T58_In_V_S2, "P_x_Lane_V_S2", TransitionCondition.CanNotAddCars);
@@ -3457,7 +3457,7 @@ public class Lanes_Intersection_Bucharest {
         T6_In_N_S2.TransitionName = "T6_In_N_S2";
         T6_In_N_S2.InputPlaceName.add("P_LaneIn_int16_V_S2");
         T6_In_N_S2.InputPlaceName.add("P_x_Lane_V_S2");
-        T6_In_N_S2.IsAsync = true;
+        //T6_In_N_S2.IsAsync = true;
 
         Condition T6_In_N_S2_Ct1 = new Condition(T6_In_N_S2, "P_LaneIn_N_S2", TransitionCondition.NotNull);
         Condition T6_In_N_S2_Ct2 = new Condition(T6_In_N_S2, "P_x_Lane_N_S2", TransitionCondition.CanNotAddCars);
@@ -3613,7 +3613,7 @@ public class Lanes_Intersection_Bucharest {
         T6_In_S_S2.TransitionName = "T6_In_S_S2";
         T6_In_S_S2.InputPlaceName.add("P_LaneIn_int16_V_S2");
         T6_In_S_S2.InputPlaceName.add("P_x_Lane_V_S2");
-        T6_In_S_S2.IsAsync = true;
+        //T6_In_S_S2.IsAsync = true;
 
         Condition T6_In_S_S2_Ct1 = new Condition(T6_In_S_S2, "P_LaneIn_int1_S_S2", TransitionCondition.NotNull);
         Condition T6_In_S_S2_Ct2 = new Condition(T6_In_S_S2, "P_x_Lane_S_S2", TransitionCondition.CanNotAddCars);
@@ -3770,7 +3770,7 @@ public class Lanes_Intersection_Bucharest {
         T6_In_E_S2.TransitionName = "T6_In_E_S2";
         T6_In_E_S2.InputPlaceName.add("P_LaneOut_Int1_V_S3");
         T6_In_E_S2.InputPlaceName.add("P_x_Lane_E_S2");
-        T6_In_E_S2.IsAsync = true;
+        //T6_In_E_S2.IsAsync = true;
 
         Condition T6_In_E_S2_Ct1 = new Condition(T6_In_E_S2, "P_LaneOut_Int1_V_S3", TransitionCondition.HaveCar);
         Condition T6_In_E_S2_Ct2 = new Condition(T6_In_E_S2, "P_x_Lane_S_S2", TransitionCondition.CanNotAddCars);

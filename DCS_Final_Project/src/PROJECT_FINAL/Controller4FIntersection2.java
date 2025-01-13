@@ -135,8 +135,8 @@ public class Controller4FIntersection2 {
         pn.ConstantPlaceList.add(Five);
 
         DataInteger Ten = new DataInteger();
-        Five.SetName("Ten");
-        Five.SetValue(10);
+        Ten.SetName("Ten");
+        Ten.SetValue(10);
         pn.ConstantPlaceList.add(Ten);
 
         // ---------------------------- iniT ------------------------------------
